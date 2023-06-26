@@ -13,6 +13,12 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+:root {
+    --color-offwhite: #f8f8ff;
+    --color-tinygreen: #fafffa;
+}
+
+
 /* ------------ COURSE BAR -----------------  */
 .course_bar {
     padding: 3rem 0 1.5rem 0;
@@ -52,14 +58,14 @@ body {
 }
 
 .certified-course_section i {
-    color: green;
+    color: #006400;
     padding: 0 0.3rem 0 0;
 }
 
 /* ----------------- COURSE OPTION SETION --------------  */
 
 .course-options_content {
-    padding: 10rem 10rem 0 0;
+    padding: 10rem 10rem 4rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,11 +82,11 @@ body {
 }
 
 .options_list li a.active{
-    color: green;
+    color: #006400;
 }
 
 .options_list li a.active::before {
-    background-color: green;
+    background-color: #006400;
 }
 
 .options_list li a::before {
@@ -118,4 +124,36 @@ body {
 
 .button:hover {
     background-color: #6495ED;
+}
+
+/* ----------------- COURSE STEPS SECTION ---------------- */
+
+.course-step_content {
+    padding: 4.5rem;
+    background-color: var(--color-tinygreen);
+}
+
+.step_paragraph {
+    text-align: center;
+}
+
+.step_paragraph h2 {
+    font-size: 1.7rem;
+    padding: 1rem;
+}
+
+.steps_body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem;
+}
+
+.steps {
+    text-align: center;
+}
+
+.img {
+    padding: 1rem;
 }
