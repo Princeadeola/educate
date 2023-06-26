@@ -2,3 +2,6 @@ header li:hover > ul,
 li:focus-within > ul {
   display: block;
 }
+.rotate-left {
+  transform: rotate(-80deg);
+}
