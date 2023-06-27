@@ -8,56 +8,81 @@
     <title>Document</title>
 </head>
 <body class="bg-gray-100 text-black">
-    <header class="w-full fixed flex flex-row px-6 py-4 bg-white items-center justify-between gap-3 md:gap-0">
+    <header class="w-full fixed flex top-0 flex-row h-20 px-6 py-4 bg-white items-center justify-between gap-5 md:gap-0">
+
         <div class="flex flex-row items-center gap-1">
             <img class="md:w-6 w-7" src="../images/fluent_learning-app-20-filled.svg" alt="Educate">
             <h1 class="font-bold md:text-[20px] text-[25px] text-[#043021]">Educate</h1>
         </div>
-        <!-- <nav class=" flex flex-row border border-green-900 gap-9"> -->
-            <ul class="items-center hidden fixed md:relative md:bg-transparent text-sm z-50 bg-white justify-evenly md:flex md:flex-row font-medium h-full py-1 md:py-0 w-[50%] border-l md:border-none top-0 gap-0 md:gap-3 translate-x-2 ease-in-out duration-300 sidebar">
-                <li class="p-4 mt-10">Home</li>
-                <li class="p-4">Courses
-                   <i class="ri-arrow-down-s-line ml-2"></i>
-                </li>
-                <li class="p-4">Tests
-                    <i class="ri-arrow-down-s-line ml-2"></i>
-                </li>
-                <li class="p-4">Resources
-                    <i class="ri-arrow-down-s-line ml-2"></i>
-                </li>
-                <li class="p-4 md:hidden">
-                    <ul class="flex flex-row gap-9 items-center">
-                        <li class="">
-                            English
-                            <i class="ri-arrow-down-s-line ml-2 mt-6"></i>
-                        </li>
-                        <li class="">
-                            <button class="rounded-full text-sm bg-blue-500 text-white px-4 py-1 -mt-[4]">Join for free</button>
-                        </li>
-                    </ul>
-                </li>
-                
-                <i class="ri-close-line absolute top-2.5 right-5 font-normal md:hidden text-2xl cursor-pointer close"></i>
-            </ul>
 
-            <ul class="md:flex md:flex-row gap-7 hidden items-center justify-between font-medium">
-                <li class="relative items-center justify-center">
-                    <i class="ri-search-line absolute left-0 top-0 ml-2 mt-1"></i>
-                    <input type="text" class="px-2 py-1 pl-9 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Search">
-                </li>
-                <li>English
-                    <i class="ri-arrow-down-s-line ml-2 mt-6"></i>
-                </li>
-                <button class="rounded-full bg-blue-500 text-white px-5 py-2">Join for free</button>
-            </ul>
-        <!-- </nav> -->
-        <i class="ri-search-line font-semibold absolute right-20 md:hidden"></i>
-        <i class="ri-menu-fill top-2.5 right-3 font-normal md:hidden text-2xl cursor-pointer open"></i>
+        <ul class="items-center hidden md:hidden lg:relative lg:bg-transparent text-sm bg-white justify-evenly lg:flex font-medium md:py-0 md:gap-1 sm:gap-3 ease-in-out duration-100">
+            <li class="p-3 mt-10 md:mt-0">Home</li>
+            <li class="p-3">Courses
+                <i class="ri-arrow-down-s-line ml-0 md:ml-2"></i>
+            </li>
+            <li class="p-3">Tests
+                <i class="ri-arrow-down-s-line ml-0 md:ml-2"></i>
+            </li>
+            <li class="p-3">Resources
+                <i class="ri-arrow-down-s-line ml-0 md:ml-2"></i>
+            </li>
+        </ul>
+
+        <ul class="md:hidden lg:flex lg:flex-row gap-2 lg:gap-5 hidden items-center justify-between font-medium">
+            <li class="relative items-center justify-center">
+                <i class="ri-search-line absolute left-0 top-0 ml-2 mt-1"></i>
+                <input type="text" class="px-2 py-1 pl-9 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Search">
+            </li>
+            <li>English
+                <i class="ri-arrow-down-s-line ml-2 mt-6"></i>
+            </li>
+            <button class="rounded-full bg-blue-500 text-white px-4 py-1">Join for free</button>
+        </ul>
+
+
+        <ul class="items-center fixed text-sm z-50 bg-white justify-evenly font-medium h-full py-1 w-[50%] border-l border-l-slate-900 right-[-50%] top-0 gap-0 ease-in-out duration-100 sidebar">
+            <li class="p-4 mt-10 md:mt-5 lg:mt-0">Home</li>
+            <li class="p-4">Courses
+                <i class="ri-arrow-down-s-line ml-2"></i>
+            </li>
+            <li class="p-4">Tests
+                <i class="ri-arrow-down-s-line ml-2"></i>
+            </li>
+            <li class="p-4">Resources
+                <i class="ri-arrow-down-s-line ml-2"></i>
+            </li>
+            <li class="p-4">
+                <ul class="flex flex-row gap-9 items-center">
+                    <li class="">
+                        English
+                        <i class="ri-arrow-down-s-line ml-2 mt-6"></i>
+                    </li>
+                    <li class="">
+                        <button class="rounded-full md:text-sm text-xs bg-blue-500 text-white px-4 py-1 -mt-[4]">Join for free</button>
+                    </li>
+                </ul>
+            </li>
+            
+            <i class="ri-close-line absolute top-2.5 md:top-3 right-5 font-normal lg:hidden text-2xl cursor-pointer close"></i>
+        </ul>
+      
+        <i class="ri-search-line font-semibold absolute right-20 lg:hidden"></i>
+        <i class="ri-menu-fill top-2.5 right-3 font-normal lg:hidden text-2xl cursor-pointer open"></i>
     </header>
 
     <!-- HERO SECTION -->
-    <div class="bg-blue-400 grid grid-cols-2">
-        <div></div>
+    <div class="bg-blue-100 w-full h-screenitems-center justify-evenly mt-20">
+        <div class="p-5 mx-auto grid md:grid-cols-2 items-center justify-between">
+            <div class="items-center mx-auto text-center">
+                <h1 class="font-bold mx-auto text-4xl md:text-5xl">Creating a <span class="text-[#043021]">Better</span> Educational Foundation </h1>
+                <p></p>
+                <div>
+                    <button></button>
+                    <button></button>
+                </div>
+            </div>
+            
+        </div>
     </div>
 
 
