@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Poppins' sans-serif;
+    text-decoration: none;
+    transition: all .2s linear; 
+}
+
+body{
+     /* width: 1728px; */
+    /*height: 3500px; */
+    flex-shrink: 0;
+    background: #FAFAFA;
+}
+
+header{
+    display: inline-flex;
+    padding: 15px 24px;
+    width: 100%;
+    /* justify-content: center; */
+    align-items: center;
+    background: #FFF;
+    gap: 48px;
+    position: sticky;
+}
+
+header .logo-nav{
+    display: flex;
+    padding-left: 25px;
+}
+
+
+
+header .logo-dropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+header .logo-nav .logo-text h2{
+    font-size: 32px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 44px;
+    padding-left: 5px;
+}
+
+header .text-nav{
+    display: flex;
+    margin-right: 10px;
+}
+
+
+header .text-nav nav a{
+    color:  #1F1F1F;
+    font-size: 16px;
+    font-family: Poppins;
+    line-height: 22px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+header .text-nav nav a.drop{
+    color: #1562AF;
+    margin-right: 4px;
+
+}
+
+
+
+
+
+header .text-nav nav{
+    margin-right: 205px;
+}
+
+/* header .text-nav nav a img{
+    margin-top: 10px;
+} */
+
+header .text-nav .search-box {
+    display: flex; 
+    /* width: 316px; */
+    padding: 5px 5px;
+    align-items: center;
+    gap: 16px;
+    border-radius: 10px;
+    border: 1px solid var(--grey-1, #D2D2D2);
+    background: #FFF;
+}
+
+header .language-profile-nav{
+    display: flex;
+    
+}
+
+header .language-profile-nav .language{
+    display: flex;
+    padding-top: 10px;
+    margin-right: 32px;
+}
+
+header .language-profile-nav .language img{
+    height: 20px;
+}
+header .language-profile-nav .image  img{
+    height: 20px;
+    margin-top: 10px;
+    margin-right: 62px;
+}
+
+header .language-profile-nav .profile{
+    display: flex;
+}
+
+header .language-profile-nav .profile img{
+    height: 50px;
+    margin-right: 13px;
+}
+
+header .language-profile-nav .profile .name{
+    height: 20px;
+    margin-top: 15px;
+}
+
+.home-course .first-text{
+    margin: 50px 90px;
+    font-size: 24px;
+    font-family: Poppins;
+    line-height: 32px;
+    color: #5C5C5C;
+}
+
+.home-course .main-container{
+    display: flex;
+    margin-left: 80px;
+}
+
+.home-course .main-container .all-categories-container{
+    display: flex;
+    width: 271px;
+    height: 879px;
+    padding: 8px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+    flex-shrink: 0;
+    background: #FFF;
+}
+
+.home-course .main-container .all-categories-container .all-categories{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.home-course .main-container .all-categories-container .all-categories h3{
+    color:  #060606;
+    font-size: 22px;
+    /* font-family: Montserrat; */
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.home-course .main-container .all-categories-container .all-categories p{
+    color: #1F1F1F;
+    font-size: 16px;
+    /* font-family: Poppins; */
+    font-weight: 500;
+    line-height: 22px; 
+     
+}
+
+.home-course .main-container .all-categories-container .all-categories p input{
+    margin-right: 5px; 
+    border-radius: 3.286px;
+    border: 0.849px solid  #1F1F1F;
+    
+}
+
+.home-course .main-container .all-categories-container .levels{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.home-course .main-container .all-categories-container .levels h3{
+    color:  #060606;
+    font-size: 22px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 28px;    
+}
+
+.home-course .main-container .all-categories-container .levels p{
+    color: #1F1F1F;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.home-course .main-container .all-categories-container .levels p input{
+    border-radius: 3.286px;
+    border: 0.849px solid var(--grey-6, #1F1F1F);
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background: #092132;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.footer .box-container{
+    
+    display: inline-flex;
+    padding: 15px 64px;
+    width: 100%;
+    justify-content: center;
+    color: #FFF;
+    gap: 48px;
+    line-height: 2;
+}
+
+
+
+.footer .box-container .box .logo-img{
+    display: inline-flex;
+    align-items: center;
+    
+    gap: 8px;
+    
+}
+
+.footer .box-container .box .logo-img h3{
+    font-size: 32px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 44px;
+}
+
+.footer .box-container .box p{
+    display: flex;
+    height: 20px;
+    padding: 1px 11px 3px 0px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.footer .box-container .box .share{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 15px;
+}
+
+.footer .box-container .box .share a{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    margin-right: .3rem;
+    text-align: center;    
+}
+
+.footer .box-container .box-1{
+    display: inline-flex;
+    padding: 0px 76px 1px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10.371px;
+}
+
+.footer .box-container .box-2{
+    width: 86px;
+    height: 229px;
+    margin-right: 70px;
+    flex-shrink: 0;    
+}
+
+.footer .box-container .box-3{
+    width: 206px;
+    height: 197px;
+    flex-shrink: 0;   
+}
+
+.footer .credit{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    text-transform: capitalize;
+    color: #ffffff;
+    border-top: .1rem solid #E5E7EB;
+    gap: 30px;
+}
+.footer .credit .copyright{
+    margin-left: 15rem;
+}
+
+.footer .credit .privacy{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer .credit .img{
+  right: 0;
+}
