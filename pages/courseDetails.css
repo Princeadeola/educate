@@ -16,6 +16,7 @@ body {
 :root {
     --color-offwhite: #f8f8ff;
     --color-tinygreen: #fafffa;
+    --color-thickgreen: #006400;
 }
 
 
@@ -58,7 +59,7 @@ body {
 }
 
 .certified-course_section i {
-    color: #006400;
+    color: var(--color-thickgreen);
     padding: 0 0.3rem 0 0;
 }
 
@@ -82,11 +83,11 @@ body {
 }
 
 .options_list li a.active{
-    color: #006400;
+    color: var(--color-thickgreen);
 }
 
 .options_list li a.active::before {
-    background-color: #006400;
+    background-color: var(--color-thickgreen);
 }
 
 .options_list li a::before {
@@ -128,6 +129,10 @@ body {
 
 /* ----------------- COURSE STEPS SECTION ---------------- */
 
+.course-step_container {
+    padding: 0 0 5rem 0;
+}
+
 .course-step_content {
     padding: 4.5rem;
     background-color: var(--color-tinygreen);
@@ -156,4 +161,35 @@ body {
 
 .img {
     padding: 1rem;
+}
+
+/* <!-- ------ COURSE DESCRIPTION -------------------  -->  */
+
+.content-title_body {
+    padding: 1.3rem 0 3rem 0;
+}
+
+.content-title_body p{
+    padding: 1rem 0 0 0;
+}
+
+/* -------------- COURSE TO LEARN ---------------  */
+
+.content_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.learn-course h3{
+    padding: 0 0 1rem 0;
+}
+
+.content {
+    display: flex;
+    gap: 1rem;
+}
+
+.content i {
+    color: var(--color-thickgreen);
 }
