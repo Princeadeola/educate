@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------- General styling -------------- */
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+header{
+    height: 80px;
+    background: #ffffff;
+    padding-top: 15px;
+}
+
+/* --------------- Styling header ----------------- */
+
+header .logo-dropdown{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header .language-profile-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* --- logo --- */
+header .logo-dropdown .logo-nav{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* --- nav links --- */
+header .logo-dropdown .nav_link_section{
+    display: flex;
+}
+
+.nav_link_section .nav_link{
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.nav_link_section .nav_link a{
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .nav_link a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .nav_link a.drop i {
+    vertical-align: middle;
+  }
+  
+  .search-and-profile {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    border: 1px solid #D2D2D2;
+    padding: 6px 10px;
+    border-radius: 7px;
+  }
+  
+  .search-box img {
+    width: 20px;
+  }
+  
+  #search-input {
+    margin-left: 5px;
+    background-color: transparent;
+  }
+  
+
+  /* ---- langauge and profile section ---- */
+
+  .language-profile-nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .language-profile-nav .language {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .language-profile-nav .profile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .language-profile-nav .profile img {
+    width: 30px;
+  }
+  
+  .language-profile-nav .name {
+    margin-left:10px;
+  }
+  
+  .language-profile-nav .image img {
+    width: 20px;
+  }
