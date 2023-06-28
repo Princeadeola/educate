@@ -90,7 +90,7 @@ header .text-nav .search-box {
     align-items: center;
     gap: 16px;
     border-radius: 10px;
-    border: 1px solid var(--grey-1, #D2D2D2);
+    border: 1px solid #D2D2D2;
     background: #FFF;
     
 }
