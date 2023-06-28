@@ -22,7 +22,7 @@ header{
     display: inline-flex;
     padding: 15px 24px;
     width: 100%;
-    /* justify-content: center; */
+    justify-content: space-between;
     align-items: center;
     background: #FFF;
     gap: 48px;
@@ -31,7 +31,7 @@ header{
 
 header .logo-nav{
     display: flex;
-    padding-left: 25px;
+    margin-left: 25px;
 }
 
 
@@ -41,6 +41,7 @@ header .logo-dropdown{
     justify-content: center;
     align-items: center;
     gap: 64px;
+    
 }
 
 header .logo-nav .logo-text h2{
@@ -54,6 +55,8 @@ header .logo-nav .logo-text h2{
 header .text-nav{
     display: flex;
     margin-right: 10px;
+   
+    
 }
 
 
@@ -64,15 +67,13 @@ header .text-nav nav a{
     line-height: 22px;
     margin-left: 10px;
     margin-top: 10px;
+    
 }
 header .text-nav nav a.drop{
     color: #1562AF;
     margin-right: 4px;
 
 }
-
-
-
 
 
 header .text-nav nav{
@@ -85,18 +86,23 @@ header .text-nav nav{
 
 header .text-nav .search-box {
     display: flex; 
-    /* width: 316px; */
     padding: 5px 5px;
     align-items: center;
     gap: 16px;
     border-radius: 10px;
-    border: 1px solid var(--grey-1, #D2D2D2);
+    border: 1px solid #D2D2D2;
     background: #FFF;
+    
 }
 
 header .language-profile-nav{
     display: flex;
-    
+}
+
+header .language-profile-nav .icons{
+    padding: 14px;
+    font-size: 25px;
+    display: none;
 }
 
 header .language-profile-nav .language{
@@ -234,11 +240,11 @@ header .language-profile-nav .profile .name{
 }
 
 .footer .box-container{
-    
-    display: inline-flex;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: .2rem;
     padding: 15px 64px;
-    width: 100%;
-    justify-content: center;
     color: #FFF;
     gap: 48px;
     line-height: 2;
@@ -333,4 +339,114 @@ header .language-profile-nav .profile .name{
 
 .footer .credit .img{
   right: 0;
+}
+
+
+
+
+
+
+@media(max-width:1200px){
+
+
+    header{
+        padding: 15px 14px;
+        gap: 20px;
+    }
+
+
+    
+
+    header .text-nav nav{
+        margin-right: 20px;
+    }
+
+    header .logo-nav .logo-text h2{
+        font-size: 22px;
+        font-family: Poppins;
+        font-weight: 500;
+        line-height: 38px;
+    }
+
+    header .text-nav nav a{
+        font-size: 13px;
+        font-family: Poppins;
+        line-height: 22px;
+        margin-top: 10px;
+    }
+
+    header .text-nav .search-box{
+        /* margin-top: 8px; */
+        /* width: 116px; */
+    }
+
+    header .language-profile-nav .language{
+        padding-top: 10px;
+        margin-right: 12px;
+    }
+
+    header .language-profile-nav .image img{
+        margin-right: 12px;
+    }
+
+    .footer .credit .copyright{
+        margin-left: 10px;
+    }
+
+
+   
+}
+
+
+
+
+@media(max-width:991px){
+    header .text-nav .search-and-profile,
+    header .language-profile-nav .image,
+    header .language-profile-nav .language{
+        display: none;
+    }
+
+    .footer .box-container{
+        gap: 28px;
+    }
+
+    .footer .credit{
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .footer .credit .copyright{
+        margin-left: 10px;
+    }
+}
+
+@media(max-width:768px){
+
+    
+    header .language-profile-nav .profile img.name,
+    header .text-nav nav{
+        display: none;
+    }
+
+
+    header .language-profile-nav .icons{
+        margin-left: 120px;
+        display: inline;
+    }
+
+}
+
+@media(max-width:514px){
+    header .text-nav{
+        display: none;
+    }
+
+    header .language-profile-nav .icons{
+        margin-left: 0;
+    }
+
+    .footer .credit .privacy{
+        gap: 10px;
+    }
 }
