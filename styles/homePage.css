@@ -124,3 +124,12 @@
   font-family: "Material Icons";
   content: "chevron_left";
 }
+
+
+.toggle-content {
+  display: none;
+}
+/* .section{
+  margin: 4.5rem 0 ;
+  border: 1px solid red;
+} */
