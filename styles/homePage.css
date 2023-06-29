@@ -56,12 +56,15 @@
   background-color: #f4f4f8;
   color: #000;
   height: 100vh;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   margin: 0;
+  margin-top: 4.5rem;
+  gap: 1.3rem;
 }
 
 .myContainer .swiper-container {

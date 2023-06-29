@@ -22,113 +22,128 @@
 
 
 
-      <header class="w-full fixed z-[9999999999999999] flex top-0 flex-row h-20 px-6 py-4 bg-white items-center justify-between gap-5 md:gap-5">
+  <header class="w-full fixed z-[9999999999999999] flex top-0 flex-row h-20 px-6 py-4 bg-white items-center justify-between gap-5 md:gap-5">
+    <div class="flex flex-row items-center gap-1">
+        <img class="md:w-6 w-7" src="/images/logoBook.png" alt="Educate">
+        <h1 class="font-bold md:text-[20px] text-[25px] text-[#043021]">Educate</h1>
+    </div>
 
-        <div class="flex flex-row items-center gap-1">
-            <img class="md:w-6 w-7" src="/images/logoBook.png" alt="Educate">
-            <h1 class="font-bold md:text-[20px] text-[25px] text-[#043021]">Educate</h1>
-        </div>
-
-        <ul class="items-center hidden md:hidden lg:relative lg:bg-transparent text-sm bg-white justify-evenly lg:flex font-medium md:py-0 md:gap-1 sm:gap-3 ease-in-out duration-100 md:gap-3">
-          <li class="p-3 mt-10 md:mt-0">Home</li>
-          <li class="p-3 relative group">
+    <ul class="items-center hidden md:hidden lg:relative lg:bg-transparent text-sm bg-white justify-evenly lg:flex font-medium md:py-0 md:gap-1 sm:gap-3 ease-in-out duration-100 md:gap-3">
+        <li class="p-3 mt-10 md:mt-0">Home</li>
+        <li class="p-3 relative group">
             Courses
             <i class="ri-arrow-down-s-line ml-0 md:ml-2"></i>
             <ul class="absolute top-8 hidden bg-white p-2 mt-1 rounded-lg shadow-lg group-hover:block">
-              <li class="py-2 text-[18px] px-1"><a href="#">Courses1</a></li>
-              <li class="py-2 text-[18px] px-1"><a href="#">Courses2</a></li>
-              <li class="py-2 text-[18px] px-1"><a href="#">Courses3</a></li>
-              <li class="py-2 text-[18px] px-1"><a href="#">Courses4</a></li>
+                <li class="py-2 text-[18px] px-1"><a href="#">Courses1</a></li>
+                <li class="py-2 text-[18px] px-1"><a href="#">Courses2</a></li>
+                <li class="py-2 text-[18px] px-1"><a href="#">Courses3</a></li>
+                <li class="py-2 text-[18px] px-1"><a href="#">Courses4</a></li>
             </ul>
-          </li>
-          <li class="p-3 relative group">Tests
+        </li>
+        <li class="p-3 relative group">Tests
             <i class="ri-arrow-down-s-line ml-0 md:ml-2"></i>
             <ul class="absolute top-8 hidden bg-white p-2 mt-1 rounded-lg shadow-lg group-hover:block">
-              <li class="py-2 text-[18px] px-1"><a href="#">Courses1</a></li>
-              <li class="py-2 text-[18px] px-1"><a href="#">Courses2</a></li>
-              <li class="py-2 text-[18px] px-1"><a href="#">Courses3</a></li>
-              <li class="py-2 text-[18px] px-1"><a href="#">Courses4</a></li>
+                <li class="py-2 text-[18px] px-1"><a href="#">Courses1</a></li>
+                <li class="py-2 text-[18px] px-1"><a href="#">Courses2</a></li>
+                <li class="py-2 text-[18px] px-1"><a href="#">Courses3</a></li>
+                <li class="py-2 text-[18px] px-1"><a href="#">Courses4</a></li>
             </ul>
-          </li>
-          <li class="p-3">Resources
+        </li>
+        <li class="p-3">Resources
             <i class="ri-arrow-down-s-line ml-0 md:ml-2"></i>
-          </li>
-        </ul>
-        
+        </li>
+    </ul>
 
-        <ul class="md:hidden lg:flex lg:flex-row gap-2 md:gap-4 lg:gap-5 hidden items-center justify-between font-medium">
-            <li class="relative items-center justify-center">
-                <i class="ri-search-line absolute left-0 top-0 ml-2 mt-1"></i>
-                <input type="text" class="px-2 py-1 pl-9 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Search">
-            </li>
-            <li>English
-                <i class="ri-arrow-down-s-line ml-2 mt-6"></i>
-            </li>
-            <li class="px-2 py-1 flex items-center gap-2 rounded hover:bg-gray-200 cursor-pointer"><img src="/images/profileImg.png" class="w-[30px] h-[30px] object-fit-cover" alt=""> <span id="">Tony Tones</span></li>
-        </ul>
+    <ul class="md:hidden lg:flex lg:flex-row gap-2 md:gap-4 lg:gap-5 hidden items-center justify-between font-medium">
+        <li class="relative items-center justify-center">
+            <i class="ri-search-line absolute left-0 top-0 ml-2 mt-1"></i>
+            <input type="text" class="px-2 py-1 pl-9 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Search">
+        </li>
+        <li>English
+            <i class="ri-arrow-down-s-line ml-2 mt-6"></i>
+        </li>
+        <li class="px-2 py-1 flex items-center gap-2 rounded hover:bg-gray-200 cursor-pointer">
+            <img src="/images/profileImg.png" class="w-[30px] h-[30px] object-fit-cover" alt="">
+            <span id="">Tony Tones</span>
+        </li>
+    </ul>
 
-
-        <ul class="items-center fixed text-sm z-50 bg-white justify-evenly font-medium h-full py-1 w-[50%] border-l border-l-slate-900 right-[-50%] top-0 gap-0 ease-in-out duration-100 sidebar md:gap-4">
-            <li class="p-4 mt-10 md:mt-5 lg:mt-0">Home</li>
-            <li class="p-4">Courses
-                <i class="ri-arrow-down-s-line ml-2"></i>
-            </li>
-            <li class="p-4">Tests
-                <i class="ri-arrow-down-s-line ml-2"></i>
-            </li>
-            <li class="p-4">Resources
-                <i class="ri-arrow-down-s-line ml-2"></i>
-            </li>
-            <li class="p-4">
-                <ul class="flex flex-row gap-9 items-center">
-                    <li class="">
-                        English
-                        <i class="ri-arrow-down-s-line ml-2 mt-6"></i>
+    <ul class="items-center fixed text-sm z-50 bg-white justify-evenly font-medium h-full py-1 w-[50%] border-l border-l-slate-900 right-[-50%] top-0 gap-0 ease-in-out duration-100 sidebar md:gap-4">
+        <li class="p-4 mt-10 md:mt-5 lg:mt-0">Home</li>
+        <li class="p-4">Courses
+            <i class="ri-arrow-down-s-line ml-2"></i>
+        </li>
+        <li class="p-4">Tests
+            <i class="ri-arrow-down-s-line ml-2"></i>
+        </li>
+        <li class="p-4">Resources
+            <i class="ri-arrow-down-s-line ml-2"></i>
+        </li>
+        <li class="p-4">
+            <ul class="block md:flex flex-row gap-9 items-center">
+                <li class="">
+                    English
+                    <i class="ri-arrow-down-s-line ml-2 mt-6"></i>
+                </li>
+                <li class="mt-1 md:mt-0">
+                    <li class="px-2 py-1 flex items-center gap-2 rounded hover:bg-gray-200 cursor-pointer">
+                        <img src="/images/profileImg.png" class="w-[30px] h-[30px] object-fit-cover" alt="">
+                        <span id="">Tony Tones</span>
                     </li>
-                    <li class="">
-                      <li class="px-2 py-1 flex items-center gap-2 rounded hover:bg-gray-200 cursor-pointer"><img src="/images/profileImg.png" class="w-[30px] h-[30px] object-fit-cover" alt=""> <span id="">Tony Tones</span></li>
-                    </li>
-                </ul>
-            </li>
-            
-            <i class="ri-close-line absolute top-4 md:top-3 right-5 font-normal lg:hidden text-2xl cursor-pointer close"></i>
-        </ul>
-      
-        <i class="ri-search-line font-semibold absolute right-20 lg:hidden"></i>
-        <i class="ri-menu-fill top-2.5 right-3 font-normal lg:hidden text-2xl cursor-pointer open" style="border: 2px solid red;"></i>
-    </header>
-      
+                </li>
+            </ul>
+        </li>
+
+        <i class="ri-close-line absolute top-4 md:top-3 right-5 font-normal lg:hidden text-2xl cursor-pointer close"></i>
+    </ul>
+
+    <i class="ri-search-line font-semibold absolute right-20 lg:hidden"></i>
+    <i class="ri-menu-fill top-2.5 right-3 font-normal lg:hidden text-2xl cursor-pointer open" ></i>
+</header>
+
 
 
         <!-- section1 -->
         <section class="px-3 py-[3rem] z[-999999999] mt-[4rem]">
-          <h1 id="welcome" class="flex  gap-2 items-center text-4xl mb-6 ml-[2.4rem] font-semibold">
-            <span class="material-symbols-outlined rotate-[-80deg] text-[#FFD700]">waving_hand</span>
-            <span>Welcome Back</span> <span id="">Tones</span> !
-          </h1>
+  <h1 id="welcome" class="flex gap-2 items-center text-4xl mb-6 ml-[2.4rem] font-semibold">
+    <span class="material-symbols-outlined rotate-[-80deg] text-[#FFD700]">waving_hand</span>
+    <span>Welcome Back</span>
+    <span id="">Tones</span> !
+  </h1>
 
-          <div class="container max-w-[1120px] flex flex-wrap gap-3 justify-evenly mx-auto">
-            <div class="flex items-center justify-center flex-col w-screen h-[300px] md:w-[320px] bg-white" style="box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;"><h3 class="font-bold text-3xl text-[#043021]">12</h3> <P class="font-bold">Courses Completed</P></div>
-            <div class="flex items-center justify-center flex-col w-screen h-[300px] md:w-[320px] bg-white"  style="box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;"><h3 class="font-bold text-3xl text-[#043021]">5</h3> <p class="font-bold"> Courses In Progress</p></div>
-            <div class="flex items-center justify-center flex-col w-screen h-[300px] md:w-[320px] bg-white"  style="box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;"><h3 class="font-bold text-3xl">July</h3> 
-              <ul class="px-2 mt-2">
-                <li class="flex gap-2 items-center py-1"> <i class="bi bi-clock text-sky-500"></i> Put in 12hrs 50 mins of studying in total</li>
-                <li class="flex gap-2 items-center py-1"> <i class="bi bi-award text-sky-500"></i> You have progress from beginner level to pro</li>
-                <li class="flex gap-2 items-center py-1"> <i class="bi bi-trophy text-sky-500"></i> You hav completed a course</li>
-              </ul> 
-            </div>
-            
-           
-          </div>
-          
-        </section>
+  <div class="container max-w-[1120px] flex flex-wrap gap-3 justify-evenly mx-auto">
+    <div class="flex items-center justify-center flex-col w-screen h-[300px] md:w-[320px] bg-white" style="box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;">
+      <h3 class="font-bold text-3xl text-[#043021]">12</h3>
+      <p class="font-bold">Courses Completed</p>
+    </div>
+    <div class="flex items-center justify-center flex-col w-screen h-[300px] md:w-[320px] bg-white" style="box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;">
+      <h3 class="font-bold text-3xl text-[#043021]">5</h3>
+      <p class="font-bold">Courses In Progress</p>
+    </div>
+    <div class="flex items-center justify-center flex-col w-screen h-[300px] md:w-[320px] bg-white" style="box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;">
+      <h3 class="font-bold text-3xl">July</h3>
+      <ul class="px-2 mt-2">
+        <li class="flex gap-2 items-center py-1">
+          <i class="bi bi-clock text-sky-500"></i> Put in 12hrs 50 mins of studying in total
+        </li>
+        <li class="flex gap-2 items-center py-1">
+          <i class="bi bi-award text-sky-500"></i> You have progress from beginner level to pro
+        </li>
+        <li class="flex gap-2 items-center py-1">
+          <i class="bi bi-trophy text-sky-500"></i> You have completed a course
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 
         <!-- second section -->
-        <section class=" py-[3rem] max-w-[1450px] mx-auto" style="border: 2px solid red;">
-            <div class="flex px-5  gap-2 justify-between py-2">
-              <h2 class="font-bold text-xl md:text-2xl ">Recently Opened</h2> <a href="" class=" text-[#043021] font-semibold">See All</a>
-            </div>
+        <section class="py-[3rem] max-w-[1450px] mx-auto">
+          <div class="flex px-5 gap-2 justify-between py-2">
+            <h2 class="font-bold text-xl md:text-2xl">Recently Opened</h2>
+            <a href="" class="text-[#043021] font-semibold">See All</a>
+          </div>
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -136,319 +151,302 @@
                   <div class="imgCon">
                     <img src="../images/Frame 113.png" alt="">
                   </div>
-                  <h2 class="font-bold text-xl md:text-2xl py-1 px-1">The 10 laws of Design </h2>
-                  <p class="text-[14px] md:text-[16px]">Test your proficiency in English 
-                    with our well prepared and analyzed test
-                    . This test was collated by our topTutors.
-                      The exam has the same parameters used by the... 
-                    Course</p>
-                    <button class="py-3 bg-[#E5EBFF] px-[30px] rounded-[20px] mt-[1rem] shadow-md hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-purple-400">Course</button>
+                  <h2 class="font-bold text-xl md:text-2xl py-1 px-1">The 10 laws of Design</h2>
+                  <p class="text-[14px] md:text-[16px]">
+                    Test your proficiency in English with our well prepared and analyzed test. This test was collated by our topTutors. The exam has the same parameters used by the...
+                    Course
+                  </p>
+                  <button class="py-3 bg-[#E5EBFF] px-[30px] rounded-[20px] mt-[1rem] shadow-md hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-purple-400">Course</button>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="con text-left">
-                  <div class="imgCon"><img src="../images/Frame 117.png" alt=""></div>
+                  <div class="imgCon">
+                    <img src="../images/Frame 117.png" alt="">
+                  </div>
                   <h2 class="font-bold text-xl md:text-2xl py-1 px-1">The Basic steps to carrying out research</h2>
                   <p class="text-[14px] md:text-[16px]">
-                    Test your proficiency in English with 
-                    our well prepared and analyzed test. 
-                    This test was collated by our topTutors. 
-                     The exam has the same parameters used by the... </p>
-                     <button class="py-3 bg-[#E7FEE6] px-[30px] rounded-[20px] mt-[1rem] shadow-md hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-green-300">Video</button>
+                    Test your proficiency in English with our well prepared and analyzed test. This test was collated by our topTutors. The exam has the same parameters used by the...
+                  </p>
+                  <button class="py-3 bg-[#E7FEE6] px-[30px] rounded-[20px] mt-[1rem] shadow-md hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-green-300">Video</button>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="con text-left">
-                  <div class="imgCon"><img src="/images/Frame 113 (1).png" alt=""></div>
+                  <div class="imgCon">
+                    <img src="/images/Frame 113 (1).png" alt="">
+                  </div>
                   <h2 class="font-bold text-xl md:text-2xl py-1 px-1">Figma as a tool for design</h2>
                   <p class="text-[14px] md:text-[16px]">
-                    Test your proficiency in English with our 
-                    well prepared and analyzed test. 
-                    This test was collated by our topTutors. 
-                     The exam has the same parameters used by the... 
-                    </p>
-                    <button class="py-3 bg-[#FFF1E6] px-[30px] rounded-[20px] mt-[1rem] shadow-md hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-orange-400">Pdf</button>
+                    Test your proficiency in English with our well prepared and analyzed test. This test was collated by our topTutors. The exam has the same parameters used by the...
+                  </p>
+                  <button class="py-3 bg-[#FFF1E6] px-[30px] rounded-[20px] mt-[1rem] shadow-md hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-orange-400">Pdf</button>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="con text-left">
-                  <div class="imgCon"><img src="/images/Frame 117 (1).png" alt=""></div>
+                  <div class="imgCon">
+                    <img src="/images/Frame 117 (1).png" alt="">
+                  </div>
                   <h2 class="font-bold text-xl md:text-2xl py-1 px-1">Wireframing</h2>
                   <p class="text-[14px] md:text-[16px]">
-                    Test your proficiency in English with 
-                    our well prepared and analyzed test.
-                     This test was collated by our topTutors. 
-                      The exam has the same parameters used by the... </p>
-                      <button class="py-3 bg-[#E5EBFF] px-[30px] rounded-[20px] mt-[1rem] shadow-md  hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-purple-400">Course</button>
+                    Test your proficiency in English with our well prepared and analyzed test. This test was collated by our topTutors. The exam has the same parameters used by the...
+                  </p>
+                  <button class="py-3 bg-[#E5EBFF] px-[30px] rounded-[20px] mt-[1rem] shadow-md hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-purple-400">Course</button>
                 </div>
               </div>
-             
             </div>
-            
           </div>
-
-
-
         </section>
+        
 
 
 
         
         <!-- third section -->
-        <section class=" py-[3rem] max-w-[1450px] mx-auto" style="border: 2px solid red;">
-          <div class="flex px-5  gap-2 justify-between py-2">
-            <h2 class="font-bold text-xl md:text-2xl ">Recommended for you</h2> <a href="" class="font-semibold text-[#043021]">See All</a>
+        <section class="mt-[4rem] max-w-[1450px]  mx-auto">
+          <div class="flex px-5 gap-2 justify-between py-2">
+            <h2 class="font-bold text-xl md:text-2xl">Recommended for you</h2>
+            <a href="" class="font-semibold text-[#043021]">See All</a>
           </div>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="con2 text-center">
-                <div class="imgCon">
-                  <img src="/images/Rectangle 2851.png" alt="">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper " >
+              <div class="swiper-slide">
+                <div class="con2 text-center">
+                  <div class="imgCon">
+                    <img src="/images/Rectangle 2851.png" alt="">
+                  </div>
+                  <h2 class="font-bold text-xl md:text-2xl py-1 px-1 mt-2">Cinematography</h2>
+                  <p class="text-[14px] md:text-[16px]">Test your proficiency in English         
+                    Master the art of animation and the tools for it...
+                  </p>
+                  <button class="py-3 px-[30px] rounded-[20px] mt-[1rem] font-bold hover:translate-x-6 duration-500 hover:shadow-md">1200 Course</button>
                 </div>
-                <h2 class="font-bold text-xl md:text-2xl py-1 px-1 mt-2">Cinematography </h2>
-                <p class="text-[14px] md:text-[16px]">Test your proficiency in English         
-                  Master the art of animation and the tools for it...
-                 </p>
-                  <button class="py-3  px-[30px] rounded-[20px] mt-[1rem] font-bold  hover:translate-x-6 duration-500 hover:shadow-md ">1200 Course</button>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="con2 text-center">
-                <div class="imgCon"><img src="/images/Rectangle 2851 (1).png" alt=""></div>
-                <h2 class="font-bold text-xl md:text-2xl py-1 px-1 mt-2"> Religion</h2>
-                <p class="text-[14px] md:text-[16px]">
-                  Master the art of animation and the tools for it...
+              <div class="swiper-slide">
+                <div class="con2 text-center">
+                  <div class="imgCon">
+                    <img src="/images/Rectangle 2851 (1).png" alt="">
+                  </div>
+                  <h2 class="font-bold text-xl md:text-2xl py-1 px-1 mt-2">Religion</h2>
+                  <p class="text-[14px] md:text-[16px]">
+                    Master the art of animation and the tools for it...
                   </p>
-                   <button class="py-3  px-[30px] rounded-[20px] mt-[1rem] font-bold  hover:translate-x-6 duration-500 hover:shadow-md "> 2000 Courses</button>
+                  <button class="py-3 px-[30px] rounded-[20px] mt-[1rem] font-bold hover:translate-x-6 duration-500 hover:shadow-md">2000 Courses</button>
+                </div>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="con2 text-center">
-                <div class="imgCon"><img src="/images/Rectangle 2851 (3).png" alt=""></div>
-                <h2 class="font-bold text-xl md:text-2xl py-1 px-1 mt-2">Language</h2>
-                <p class="text-[14px] md:text-[16px]">
-                  Master the art of animation and the tools for it...
+              <div class="swiper-slide">
+                <div class="con2 text-center">
+                  <div class="imgCon">
+                    <img src="/images/Rectangle 2851 (3).png" alt="">
+                  </div>
+                  <h2 class="font-bold text-xl md:text-2xl py-1 px-1 mt-2">Language</h2>
+                  <p class="text-[14px] md:text-[16px]">
+                    Master the art of animation and the tools for it...
                   </p>
-                  <button class="py-3  px-[30px] rounded-[20px] mt-[1rem] font-bold  hover:translate-x-6 duration-500 hover:shadow-md ">1200 Courses</button>
+                  <button class="py-3 px-[30px] rounded-[20px] mt-[1rem] font-bold hover:translate-x-6 duration-500 hover:shadow-md">1200 Courses</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="con2 text-center">
+                  <div class="imgCon">
+                    <img src="/images/Rectangle 2851 (2).png" alt="">
+                  </div>
+                  <h2 class="font-bold text-xl md:text-2xl py-1 px-1 mt-2">Advertisement</h2>
+                  <p class="text-[14px] md:text-[16px]">
+                    Master the art of animation and the tools for it...
+                  </p>
+                  <button class="py-3 px-[30px] rounded-[20px] mt-[1rem] font-bold hover:translate-x-6 duration-500 hover:shadow-md">1200 Courses</button>
+                </div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="con2 text-center">
-                <div class="imgCon"><img src="/images/Rectangle 2851 (2).png" alt=""></div>
-                <h2 class="font-bold text-xl md:text-2xl py-1 px-1 mt-2">Advertisement</h2>
-                <p class="text-[14px] md:text-[16px]">
-                  
-                  Master the art of animation and the tools for it...
-                   </p>
-                    <button class="py-3  px-[30px] rounded-[20px] mt-[1rem] font-bold  hover:translate-x-6 duration-500 hover:shadow-md ">1200 Courses</button>
-              </div>
-            </div>
-           
           </div>
-          
-        </div>
-
-
-
-      </section>
+        </section>
+        
 
 
 
 
       <!-- four section -->
-      <section class=" py-[3rem] max-w-[1450px] mx-auto" style="border: 2px solid red;">
-        <div class="flex px-5  gap-2 justify-between py-2">
-          <h2 class="font-bold text-xl md:text-2xl ">Most Popular Courses right now</h2> <a href="" class="font-semibold text-[#043021]">See All</a>
+      <section class="pt-[3rem] max-w-[1450px] mx-auto">
+        <div class="flex px-5 gap-2 justify-between py-2">
+          <h2 class="font-bold text-xl md:text-2xl">Most Popular Courses right now</h2>
+          <a href="" class="font-semibold text-[#043021]">See All</a>
         </div>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="con2 text-center">
-              <div class="imgCon">
-                <img src="/images/newLap.jpg" alt="">
-              </div>
-              <h2 class="font-bold text-xl md:text-2xl py-1 px-1 mt-2">Data Science </h2>
-              <p class="text-[14px] md:text-[16px]">
-                Master the art of animation and the tools for it...
-            
-               </p>
-                <button class="py-3  px-[30px] rounded-[20px] mt-[1rem] font-bold  hover:translate-x-6 duration-500 hover:shadow-md ">1200 Courses</button>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="con2 text-center">
-              <div class="imgCon"><img src="/images/robo.png" alt=""></div>
-              <h2 class="font-bold text-xl md:text-2xl py-1 px-1 mt-2">   Artificial Intelligence</h2>
-              <p class="text-[14px] md:text-[16px]">
-              
-                Master the art of animation and the tools for it...
-        
-                </p>
-                 <button class="py-3  px-[30px] rounded-[20px] mt-[1rem] font-bold  hover:translate-x-6 duration-500 hover:shadow-md "> 2000 Courses</button>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="con2 text-center">
-              <div class="imgCon"><img src="/images/stats.png" alt=""></div>
-              <h2 class="font-bold text-xl md:text-2xl py-1 px-1 mt-2">Statistics</h2>
-              <p class="text-[14px] md:text-[16px]">
-                Master the art of animation and the tools for it...
-                </p>
-                <button class="py-3  px-[30px] rounded-[20px] mt-[1rem] font-bold  hover:translate-x-6 duration-500 hover:shadow-md ">1200 Courses</button>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="con2 text-center">
-              <div class="imgCon"><img src="/images/Rectangle 2852 (1).png" alt=""></div>
-              <h2 class="font-bold text-xl md:text-2xl py-1 px-1 mt-2">Product Management</h2>
-              <p class="text-[14px] md:text-[16px]">
-                
-                Master the art of animation and the tools for it...
-                 </p>
-                  <button class="py-3  px-[30px] rounded-[20px] mt-[1rem] font-bold  hover:translate-x-6 duration-500 hover:shadow-md ">1200 Courses</button>
-            </div>
-          </div>
-         
-        </div>
-        
-      </div>
-
-
-
-    </section>
-
-
-    
-        <!-- fiveth section -->
-        <section class=" py-[3rem] max-w-[1450px] mx-auto" style="border: 2px solid red;">
-          <div class="text-left px-5  gap-2 justify-between py-2">
-            <h2 class="font-bold text-xl md:text-2xl ">Test your competence </h2> 
-          </div>
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="con text-left">
+              <div class="con2 text-center">
                 <div class="imgCon">
-                  <img src="../images/Frame 113.png" alt="">
+                  <img src="/images/newLap.jpg" alt="">
                 </div>
-                <h2 class="font-bold text-xl py-1 px-1">TOEFL (Test Of English as a Foreign Language) </h2>
+                <h2 class="font-bold text-xl md:text-2xl py-1 px-1 mt-2">Data Science</h2>
                 <p class="text-[14px] md:text-[16px]">
-                  Test your proficiency in English with our well prepared and analyzed test. This test was collated by our topTutors.  The exam has the same parameters used by the... 
-                  </p>
-                  <button class="py-3 bg-sky-400 px-[30px] rounded-[20px] mt-[1rem] shadow-md hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-sky-400">Start Trial</button>
+                  Master the art of animation and the tools for it...
+                </p>
+                <button class="py-3 px-[30px] rounded-[20px] mt-[1rem] font-bold hover:translate-x-6 duration-500 hover:shadow-md">1200 Courses</button>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="con text-left">
-                <div class="imgCon"><img src="../images/Frame 117.png" alt=""></div>
-                <h2 class="font-bold text-xl py-1 px-1">GMAT (Graduate Mgt. Admission Test)</h2>
+              <div class="con2 text-center">
+                <div class="imgCon">
+                  <img src="/images/robo.png" alt="">
+                </div>
+                <h2 class="font-bold text-xl md:text-2xl py-1 px-1 mt-2">Artificial Intelligence</h2>
                 <p class="text-[14px] md:text-[16px]">
-                  
-                  Test your proficiency in English with our well prepared and analyzed test. This test was collated by our topTutors.  The exam has the same parameters used by the... 
-                  </p>
-                   <button class="py-3 bg-sky-400 px-[30px] rounded-[20px] mt-[1rem] shadow-md hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-sky-400">Start Trial</button>
+                  Master the art of animation and the tools for it...
+                </p>
+                <button class="py-3 px-[30px] rounded-[20px] mt-[1rem] font-bold hover:translate-x-6 duration-500 hover:shadow-md">2000 Courses</button>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="con text-left">
-                <div class="imgCon"><img src="/images/Frame 1483.png" alt=""></div>
-                <h2 class="font-bold text-xl  px-1">IELTS (International English Language Testing System)</h2>
+              <div class="con2 text-center">
+                <div class="imgCon">
+                  <img src="/images/stats.png" alt="">
+                </div>
+                <h2 class="font-bold text-xl md:text-2xl py-1 px-1 mt-2">Statistics</h2>
                 <p class="text-[14px] md:text-[16px]">
-                  
-                  Test your proficiency in English with our well prepared and analyzed test. This test was collated by our topTutors.  The exam has the same parameters used by the... 
-                  
-                  </p>
-                  <button class="py-3 bg-sky-400 px-[30px] rounded-[20px] mt-[1rem] shadow-md hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-sky-400">Start Trial</button>
+                  Master the art of animation and the tools for it...
+                </p>
+                <button class="py-3 px-[30px] rounded-[20px] mt-[1rem] font-bold hover:translate-x-6 duration-500 hover:shadow-md">1200 Courses</button>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="con text-left">
-                <div class="imgCon"><img src="/images/Frame 114.png" alt=""></div>
-                <h2 class="font-bold text-xl  py-1 px-1"> SAT ( Scholarship Aptitude Test)</h2>
+              <div class="con2 text-center">
+                <div class="imgCon">
+                  <img src="/images/Rectangle 2852 (1).png" alt="">
+                </div>
+                <h2 class="font-bold text-xl md:text-2xl py-1 px-1 mt-2">Product Management</h2>
                 <p class="text-[14px] md:text-[16px]">
-                 
-                  Test your proficiency in English with our well prepared and analyzed test. This test was collated by our topTutors.  The exam has the same parameters used by the... 
-                  </p>
-                    <button class="py-3 bg-sky-400 px-[30px] rounded-[20px] mt-[1rem] shadow-md hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-sky-400">Start Trial</button>
+                  Master the art of animation and the tools for it...
+                </p>
+                <button class="py-3 px-[30px] rounded-[20px] mt-[1rem] font-bold hover:translate-x-6 duration-500 hover:shadow-md">1200 Courses</button>
               </div>
             </div>
-           
           </div>
-          
         </div>
-
-
-
       </section>
+      
+
+    
+        <!-- fiveth section -->
+        <section class=" max-w-[1450px] mx-auto" >
+          <div class="text-left px-5 gap-2 justify-between py-2">
+            <h2 class="font-bold text-xl md:text-2xl">Test your competence</h2>
+          </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="con text-left">
+                  <div class="imgCon">
+                    <img src="../images/Frame 113.png" alt="">
+                  </div>
+                  <h2 class="font-bold text-xl py-1 px-1">TOEFL (Test Of English as a Foreign Language)</h2>
+                  <p class="text-[14px] md:text-[16px]">
+                    Test your proficiency in English with our well prepared and analyzed test. This test was collated by our topTutors. The exam has the same parameters used by the...
+                  </p>
+                  <button class="py-3 bg-sky-400 px-[30px] rounded-[20px] mt-[1rem] shadow-md hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-sky-400">Start Trial</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="con text-left">
+                  <div class="imgCon">
+                    <img src="../images/Frame 117.png" alt="">
+                  </div>
+                  <h2 class="font-bold text-xl py-1 px-1">GMAT (Graduate Mgt. Admission Test)</h2>
+                  <p class="text-[14px] md:text-[16px]">
+                    Test your proficiency in English with our well prepared and analyzed test. This test was collated by our topTutors. The exam has the same parameters used by the...
+                  </p>
+                  <button class="py-3 bg-sky-400 px-[30px] rounded-[20px] mt-[1rem] shadow-md hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-sky-400">Start Trial</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="con text-left">
+                  <div class="imgCon">
+                    <img src="/images/Frame 1483.png" alt="">
+                  </div>
+                  <h2 class="font-bold text-xl px-1">IELTS (International English Language Testing System)</h2>
+                  <p class="text-[14px] md:text-[16px]">
+                    Test your proficiency in English with our well prepared and analyzed test. This test was collated by our topTutors. The exam has the same parameters used by the...
+                  </p>
+                  <button class="py-3 bg-sky-400 px-[30px] rounded-[20px] mt-[1rem] shadow-md hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-sky-400">Start Trial</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="con text-left">
+                  <div class="imgCon">
+                    <img src="/images/Frame 114.png" alt="">
+                  </div>
+                  <h2 class="font-bold text-xl py-1 px-1">SAT (Scholarship Aptitude Test)</h2>
+                  <p class="text-[14px] md:text-[16px]">
+                    Test your proficiency in English with our well prepared and analyzed test. This test was collated by our topTutors. The exam has the same parameters used by the...
+                  </p>
+                  <button class="py-3 bg-sky-400 px-[30px] rounded-[20px] mt-[1rem] shadow-md hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-sky-400">Start Trial</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
 
 
 
               <!-- sixth section -->
-              <section class=" py-[3rem] max-w-[1450px] mx-auto" style="border: 2px solid red;">
-                <div class="text-left px-5  gap-2 justify-between py-2">
-                  <h2 class="font-bold text-xl md:text-2xl ">Similar courses to Ui/Ux design</h2> 
-                </div>
-
+              <section class="max-w-[1450px] mx-auto" >
+               
                 <div class="myContainer">
-    
+                  <div class="text-left px-5 gap-2 justify-between mr-auto">
+                    <h2 class="font-bold text-xl md:text-2xl">Similar courses to Ui/Ux design</h2>
+                  </div>
                   <div class="swiper-container mySwiper">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
-                          <div class="con text-center">
-                              <div class="imgCon"><img src="/images/card.png" alt=""></div>
-                              <h2 class="font-bold text-xl  px-1">  Graphics Design</h2>
-                              <p class="text-[14px] md:text-[16px]"> 
-                                Get an indept understanding of Graphics Design...
-                               
-                                </p>
-                                <button class="py-3 bg-sky-400 px-[30px] rounded-[20px] mt-[1rem] shadow-md hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-sky-400"> Register</button>
-                            </div>
+                        <div class="con text-center">
+                          <div class="imgCon"><img src="/images/card.png" alt=""></div>
+                          <h2 class="font-bold text-xl px-1">Graphics Design</h2>
+                          <p class="text-[14px] md:text-[16px]">
+                            Get an indepth understanding of Graphics Design...
+                          </p>
+                          <button class="py-3 bg-sky-400 px-[30px] rounded-[20px] mt-[1rem] shadow-md hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-sky-400">Register</button>
+                        </div>
                       </div>
                       <div class="swiper-slide">
-                          <div class="con text-center">
-                              <div class="imgCon"><img src="/images/write.png" alt=""></div>
-                              <h2 class="font-bold text-xl  px-1"> Ui/Ux Design</h2>
-                              <p class="text-[14px] md:text-[16px]">
-                                Get an inept understanding of Ui/Ux design by...
-                                </p>
-                                <button class="py-3 bg-sky-400 px-[30px] rounded-[20px] mt-[1rem] shadow-md hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-sky-400">  Register </button>
-                            </div>
+                        <div class="con text-center">
+                          <div class="imgCon"><img src="/images/write.png" alt=""></div>
+                          <h2 class="font-bold text-xl px-1">Ui/Ux Design</h2>
+                          <p class="text-[14px] md:text-[16px]">
+                            Get an indepth understanding of Ui/Ux design by...
+                          </p>
+                          <button class="py-3 bg-sky-400 px-[30px] rounded-[20px] mt-[1rem] shadow-md hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-sky-400">Register</button>
+                        </div>
                       </div>
                       <div class="swiper-slide">
-                          <div class="con text-center">
-                              <div class="imgCon"><img src="/images/man.png" alt=""></div>
-                              <h2 class="font-bold text-xl  px-1"> Animation</h2>
-                              <p class="text-[14px] md:text-[16px]">
-                               
-                                Get an indept understanding of Graphics Design...
-                                </p>
-                                <button class="py-3 bg-sky-400 px-[30px] rounded-[20px] mt-[1rem] shadow-md hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-sky-400">  Register</button>
-                            </div>
+                        <div class="con text-center">
+                          <div class="imgCon"><img src="/images/man.png" alt=""></div>
+                          <h2 class="font-bold text-xl px-1">Animation</h2>
+                          <p class="text-[14px] md:text-[16px]">
+                            Get an indepth understanding of Graphics Design...
+                          </p>
+                          <button class="py-3 bg-sky-400 px-[30px] rounded-[20px] mt-[1rem] shadow-md hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-sky-400">Register</button>
+                        </div>
                       </div>
-                     
                     </div>
-                   
                   </div>
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
                 </div>
-             
-      
-      
-      
-            </section>
+              </section>
+              
       
 
 
 
               <!-- seven section -->
-              <section class=" py-[3rem] max-w-[1450px] mx-auto h-[400px]" style="border: 2px solid red;">
-                <div class="text-left px-5  gap-2 justify-between py-2">
-                  <h2 class="font-bold text-xl md:text-2xl ">Similar courses to Ui/Ux design</h2> 
+              <section class="py-[3rem] max-w-[1450px] mx-auto h-[400px] mt-3">
+                <div class="text-left px-5 gap-2 justify-between py-2">
+                  <h2 class="font-bold text-xl md:text-2xl">Similar courses to Ui/Ux design</h2>
                 </div>
-
-                <div class="swiper mySwiper " style="border: 2px solid blue";>
+                <div class="swiper mySwiper">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <img src="/images/Frame 1425.png" alt="">
@@ -459,20 +457,13 @@
                     <div class="swiper-slide">
                       <img src="/images/Frame 1427.png" alt="">
                     </div>
-                    <div class="swiper-slide"> 
-                       <img src="/images/Frame 1428.png" alt="">
+                    <div class="swiper-slide">
+                      <img src="/images/Frame 1428.png" alt="">
                     </div>
-                    
                   </div>
-                
                 </div>
-    
-    
-                  
-      
-      
-      
-            </section>
+              </section>
+              
 
 
 
@@ -484,25 +475,26 @@
               </div>
               <div class="flex flex-col">
                 <h2 class="font-bold text-xl md:text-2xl my-4">Joyce can’t wait to help you out with any problem you might have</h2>
-                <p class="my-3 font-semibold">“ Hey guys i am here to help you hit me up for any questions ,advice or councelling you might need ”</p>
-                <button class="py-3 bg-sky-400 px-[30px] rounded-[20px] mt-[1rem] shadow-md hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-sky-400 mr-auto">  Register</button>
+                <p class="my-3 font-semibold">“Hey guys, I am here to help you. Hit me up for any questions, advice, or counseling you might need.”</p>
+                <button class="py-3 bg-sky-400 px-[30px] rounded-[20px] mt-[1rem] shadow-md hover:translate-x-6 duration-500 hover:bg-transparent hover:border-2 hover:border-sky-400 mr-auto">Register</button>
               </div>
-
             </section>
+            
 
 
             
             <!-- section 10 -->
-            <div class="max-w-lg mx-auto p-8">
-              <details class="open:bg-white dark:open:bg-slate-900 open:ring-1 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg p-6 rounded-lg" open>
-                <summary class="text-sm leading-6 text-slate-900 dark:text-white font-semibold select-none">
-                  Why do they call it Ovaltine?
-                </summary>
-                <div class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">
-                  <p>The mug is round. The jar is round. They should call it Roundtine.</p>
-                </div>
-              </details>
-            </div>
+           <div class="max-w-lg mx-auto p-8">
+  <details class="open:bg-white dark:open:bg-slate-900 open:ring-1 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg p-6 rounded-lg" open>
+    <summary class="text-sm leading-6 text-slate-900 dark:text-white font-semibold select-none">
+      Why do they call it Ovaltine?
+    </summary>
+    <div class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">
+      <p>The mug is round. The jar is round. They should call it Roundtine.</p>
+    </div>
+  </details>
+</div>
+
 
 
 
