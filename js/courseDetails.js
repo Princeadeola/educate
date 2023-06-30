@@ -15,14 +15,46 @@
 //     })
 // }
 
-var mysong = document.getElementById("myvideo");
-var icon = document.getElementById("icon");
-icon.onclick = function(){
-    if(myvideo.paused){
-        mysong.play();
-        icon.src = "../images/pause.png"
-    }else{
-        mysong.pause();
-        icon.src = "../images/play.png"
+// var mysong = document.getElementById("myvideo");
+// var icon = document.getElementById("icon");
+// icon.onclick = function(){
+//     if(myvideo.paused){
+//         mysong.play();
+//         icon.src = "../images/pause.png"
+//     }else{
+//         mysong.pause();
+//         icon.src = "../images/play.png"
+//     }
+// }
+
+
+function openTab(evt, option) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("tabbeb");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
     }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(option).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+// curriculum .
+function openCurri(evt, curriculumlist) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("curriculum");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(curriculumlist).style.display = "block";
+  evt.currentTarget.className += " active";
 }
+
+  // FAQS 

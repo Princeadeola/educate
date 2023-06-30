@@ -7,10 +7,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course | Details</title>
     <link rel="stylesheet" href="../styles/courseDetails.css">
+    <link rel="stylesheet" href="../styles/courses.css">
     <!-- icons link  -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
+
+    <header class="header">
+        <nav class="logo-dropdown">
+            <div class="logo-nav">
+                <div class="logo-img">
+                    <img src="../images/courses-img/fluent_learning-app-20-filled.png" alt="">
+                </div>
+                <div class="logo-text">
+                    <h2>Educate</h2>
+                </div>
+            </div>
+
+            <div class="text-nav">
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#" class="drop">Courses <i class="material-icons">expand_more</i></a>
+                    <a href="#" class="drop">Resources <i class="material-icons">expand_more</i></a>
+                </nav>
+
+                <div class="search-and-profile">
+                    <div class="search-box">
+                        <img src="../images/courses-img/search.png" alt="">
+                        <input type="search" name="" id="search-input" placeholder="search ">
+
+                    </div>
+                </div>
+            </div>
+            <div class="language-profile-nav">
+                <div class="language">
+                    <p>English</p>
+                    <img src="../images/courses-img/expand_more (1).png" alt="">
+                </div>
+                <div class="image">
+                    <img src="../images/courses-img/ri_notification-2-line.png" alt="">
+                </div>
+
+                <div class="icons">
+                    <div id="menu-btn" class="fas fa-bars"></div>
+                </div>
+
+                <div class="profile">
+                    <img src="../images/courses-img/Frame 1357.png" alt="">
+                    <p class="name"> Tony Tones</p>
+                    <img class="name" src="../images/courses-img/expand_more (1).png" alt="">
+                </div>
+                
+            </div>
+
+        </nav>
+    </header>
+
     
     <div class="course_bar">
         <h3>Courses<i class="uil uil-angle-right-b"></i></h3> 
@@ -56,23 +109,26 @@
     
 
     <!-- ------- COURSE OPTION SECTION -------------  -->
+
     <section class="course-options_container">
         <div class="course-options_content">
-            <ul class="options_list">
-                <li><a class="active" href="#">Course Details</a></li>
-                <li><a href="#curriculum">Curriculum</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Instructors</a></li>
-                <li><a href="#">Reviews</a></li>
-            </ul>
+            <div class="w3-bar w3-black">
+                <ul class="options_list">
+                    <li class="w3-bar-item w3-button tablink active" onclick="openTab(event,'first')">Course Details</li>
+                    <li class="w3-bar-item w3-button tablink" onclick="openTab(event,'second')">Curriculum</li>
+                    <li class="w3-bar-item w3-button tablink" onclick="openTab(event,'third')">FAQ</li>
+                    <li class="w3-bar-item w3-button tablink" onclick="openTab(event,'fourth')">Instructors</li>
+                    <li class="w3-bar-item w3-button tablink" onclick="openTab(event,'fifth')">Reviews</li>
+                </ul>
+            </div>
 
             <button class="button button1"><a href="#">Register</a></button>
         </div>
     </section>
+      
+    <!-- content  -->
 
-    <!-- ----------------- COURSE STEPS ---------------  -->
-
-    <section class="course-step_container">
+      <div id="first" class="w3-container w3-border tabbeb">
         <div class="course-step_content">
             <div class="step_paragraph">
                 <h2>A course to set you on the right part of your design journey</h2>
@@ -109,9 +165,8 @@
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- ------ COURSE DESCRIPTION -------------------  -->
+            <!-- ------ COURSE DESCRIPTION -------------------  -->
 
     <section class="course_description">
         <h2>Course Description</h2>
@@ -190,39 +245,9 @@
         </div>
     </section>
 
-    <!-- --------------------- CURRICULUM ---------------  -->
-    <section class="curriculum_container" id="curriculum">
-        <h3>Curriculum</h3>
-        <div class="curriculum_content">
-            <div class="curriculum_list">
-                <ul>
-                    <li><a href="#">Design Thinking<i class="uil uil-arrow-right"></i></a></li>
-                    <li><a class="active" href="#">User Research<i class="uil uil-arrow-right"></i></a></li>
-                    <li><a href="#">Synthesis & Presentation<i class="uil uil-arrow-right"></i></a></li>
-                    <li><a href="#">wireframing, sketching and ui<i class="uil uil-arrow-right"></i></a></li>
-                    <li><a href="#">idating & design<i class="uil uil-arrow-right"></i></a></li>
-                    <li><a href="#">design sprints<i class="uil uil-arrow-right"></i></a></li>
-                    <li><a href="#">special topics<i class="uil uil-arrow-right"></i></a></li>
-                </ul>
-            </div>
-            <div class="curriculum_details">
-                <h4>User Research</h4>
-                <p>User research is central to UX design. when you engage users and understand their experience, you can move<br>
-                    from being aware of a problem to understanding why the problem exists and what users want to resolved.<br>
-                    There are many different user research tools; this section will explore the most effective of them.<br>
-                    Topics include: user research methods, research plans, recruiting users through screener surveys, diary studies,<br>
-                    and intrviews.<br>
-                    In this UCD discovery unit, you'll work on some mini-projects to shaepen your research skills and then apply<br>
-                    those skills to your capstone projects.
-                </p>
-                <a href="#">Read More</a>
-            </div>
-        </div>
-    </section>
+       <!-- ---------- PROSPECTIVE CAREER -------------  -->
 
-    <!-- ---------- PROSPECTIVE CAREER -------------  -->
-
-    <section class="prospective-career_container">
+       <section class="prospective-career_container">
         <h2>Prospective Career in Ui/Ux Design</h2>
         <div class="prospective-career_content">
             <div class="career-title_body">
@@ -270,6 +295,277 @@
 
             
         </div>
+    </section>
+    </div>
+    
+      <div id="second" class="w3-container w3-border tabbeb" style="display:none">
+        <section class="curriculum_container" id="curriculum">
+            <h3>Curriculum</h3>
+            <div class="curriculum_content">
+                <div class="curriculum_list">
+                    <ul class="list">
+                        <li class="w3-bar-item w3-button tablink w3-red active" onclick="openCurri(event,'dt')">Design Thinking<i class="uil uil-arrow-right"></i></li>
+                        <li class="w3-bar-item w3-button tablink" onclick="openCurri(event,'ur')">User Research<i class="uil uil-arrow-right"></i></li>
+                        <li class="w3-bar-item w3-button tablink" onclick="openCurri(event,'syp')">Synthesis & Presentation<i class="uil uil-arrow-right"></i></li>
+                        <li class="w3-bar-item w3-button tablink" onclick="openCurri(event,'ws')">wireframing, sketching and ui<i class="uil uil-arrow-right"></i></li>
+                        <li class="w3-bar-item w3-button tablink" onclick="openCurri(event,'id')">idating & design<i class="uil uil-arrow-right"></i></li>
+                        <li class="w3-bar-item w3-button tablink" onclick="openCurri(event,'ds')">design sprints<i class="uil uil-arrow-right"></i></li>
+                        <li class="w3-bar-item w3-button tablink" onclick="openCurri(event,'sp')">special topics<i class="uil uil-arrow-right"></i></li>
+                    </ul>
+                </div>
+    
+                <div id="dt" class="w3-container w3-border curriculum curriculum_details">
+                    <h4>Design Thinking</h4>
+                    <p>User research is central to UX design. when you engage users and understand their experience, you can move<br>
+                        from being aware of a problem to understanding why the problem exists and what users want to resolved.<br>
+                        There are many different user research tools; this section will explore the most effective of them.<br>
+                        Topics include: user research methods, research plans, recruiting users through screener surveys, diary studies,<br>
+                        and intrviews.<br>
+                        In this UCD discovery unit, you'll work on some mini-projects to shaepen your research skills and then apply<br>
+                        those skills to your capstone projects.
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+
+                <div id="ur" class="w3-container w3-border curriculum curriculum_details" style="display:none">
+                    <h4>User Research</h4>
+                    <p>User research is central to UX design. when you engage users and understand their experience, you can move<br>
+                        from being aware of a problem to understanding why the problem exists and what users want to resolved.<br>
+                        There are many different user research tools; this section will explore the most effective of them.<br>
+                        Topics include: user research methods, research plans, recruiting users through screener surveys, diary studies,<br>
+                        and intrviews.<br>
+                        In this UCD discovery unit, you'll work on some mini-projects to shaepen your research skills and then apply<br>
+                        those skills to your capstone projects.
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+    
+                <div id="syp" class="w3-container w3-border curriculum curriculum_details" style="display:none">
+                    <h4>Synthesis & Presentation</h4>
+                    <p>User research is central to UX design. when you engage users and understand their experience, you can move<br>
+                        from being aware of a problem to understanding why the problem exists and what users want to resolved.<br>
+                        There are many different user research tools; this section will explore the most effective of them.<br>
+                        Topics include: user research methods, research plans, recruiting users through screener surveys, diary studies,<br>
+                        and intrviews.<br>
+                        In this UCD discovery unit, you'll work on some mini-projects to shaepen your research skills and then apply<br>
+                        those skills to your capstone projects.
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+    
+                <div id="ws" class="w3-container w3-border curriculum curriculum_details" style="display:none">
+                    <h4>Wireframing, Sketching And Ui</h4>
+                    <p>User research is central to UX design. when you engage users and understand their experience, you can move<br>
+                        from being aware of a problem to understanding why the problem exists and what users want to resolved.<br>
+                        There are many different user research tools; this section will explore the most effective of them.<br>
+                        Topics include: user research methods, research plans, recruiting users through screener surveys, diary studies,<br>
+                        and intrviews.<br>
+                        In this UCD discovery unit, you'll work on some mini-projects to shaepen your research skills and then apply<br>
+                        those skills to your capstone projects.
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+    
+                <div id="id" class="w3-container w3-border curriculum curriculum_details" style="display:none">
+                    <h4>Idating & Design</h4>
+                    <p>User research is central to UX design. when you engage users and understand their experience, you can move<br>
+                        from being aware of a problem to understanding why the problem exists and what users want to resolved.<br>
+                        There are many different user research tools; this section will explore the most effective of them.<br>
+                        Topics include: user research methods, research plans, recruiting users through screener surveys, diary studies,<br>
+                        and intrviews.<br>
+                        In this UCD discovery unit, you'll work on some mini-projects to shaepen your research skills and then apply<br>
+                        those skills to your capstone projects.
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+    
+                <div id="ds" class="w3-container w3-border curriculum curriculum_details" style="display:none">
+                    <h4>Design Sprints</h4>
+                    <p>User research is central to UX design. when you engage users and understand their experience, you can move<br>
+                        from being aware of a problem to understanding why the problem exists and what users want to resolved.<br>
+                        There are many different user research tools; this section will explore the most effective of them.<br>
+                        Topics include: user research methods, research plans, recruiting users through screener surveys, diary studies,<br>
+                        and intrviews.<br>
+                        In this UCD discovery unit, you'll work on some mini-projects to shaepen your research skills and then apply<br>
+                        those skills to your capstone projects.
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+    
+                <div id="sp" class="w3-container w3-border curriculum curriculum_details" style="display:none">
+                    <h4>Special Topics</h4>
+                    <p>User research is central to UX design. when you engage users and understand their experience, you can move<br>
+                        from being aware of a problem to understanding why the problem exists and what users want to resolved.<br>
+                        There are many different user research tools; this section will explore the most effective of them.<br>
+                        Topics include: user research methods, research plans, recruiting users through screener surveys, diary studies,<br>
+                        and intrviews.<br>
+                        In this UCD discovery unit, you'll work on some mini-projects to shaepen your research skills and then apply<br>
+                        those skills to your capstone projects.
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </section>
+      </div>
+    
+      <div id="third" class="w3-container tabbeb" style="display:none">
+        <!-- FREQUENTLY ASKED QUESTION  -->
+
+    <section class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="container faqs__container">
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How do i know the right courses for me?</h4>
+                    <p>
+                        lorem sjfdijfi ksisji sjndaki nijsid kajdi jdsu kjijif njdsij knsij
+                        auu uue ijaidi.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How do i know the right courses for me?</h4>
+                    <p>
+                        lorem sjfdijfi ksisji sjndaki nijsid kajdi jdsu kjijif njdsij knsij
+                        auu uue ijaidi.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How do i know the right courses for me?</h4>
+                    <p>
+                        lorem sjfdijfi ksisji sjndaki nijsid kajdi jdsu kjijif njdsij knsij
+                        auu uue ijaidi.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How do i know the right courses for me?</h4>
+                    <p>
+                        lorem sjfdijfi ksisji sjndaki nijsid kajdi jdsu kjijif njdsij knsij
+                        auu uue ijaidi.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How do i know the right courses for me?</h4>
+                    <p>
+                        lorem sjfdijfi ksisji sjndaki nijsid kajdi jdsu kjijif njdsij knsij
+                        auu uue ijaidi.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How do i know the right courses for me?</h4>
+                    <p>
+                        lorem sjfdijfi ksisji sjndaki nijsid kajdi jdsu kjijif njdsij knsij
+                        auu uue ijaidi.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- END FAQS  -->
+      </div>
+
+      <div id="fourth" class="w3-container tabbeb" style="display:none">
+        <h1>Instructors</h1>
+      </div>
+
+      <div id="fifth" class="w3-container tabbeb" style="display:none">
+        <h1>Reviews</h1>
+      </div>
+
+
+    <!-- ----------------- COURSE STEPS ---------------  -->
+
+   
+    <!-- --------------------- CURRICULUM ---------------  -->
+   
+   
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="logo-img">
+                    <img src="../images/courses-img/fluent_learning-app-20-filled.png" alt="">
+                    <h3>Educate</h3>
+                </div>
+                <p>+1 800 854-36-80</p>
+                <div class="share">
+                    <a href="" class="fab fa-facebook-f"></a>
+                    <a href="" class="fab fa-instagram"></a>
+                    <a href="" class="fab fa-github"></a>
+                    <a href="" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box-1">
+                <h3>Educate</h3>
+                <p>what we offer</p>
+                <p>Courses</p>
+                <p>Catalog</p>
+                <p>Terms</p>
+                <p>Certicates</p>
+                <p>Leadership</p>
+                <p>Become a partner</p>
+                <p>Accessibility</p>
+                <p>Accessibility</p>
+
+            </div>
+            <div class="box-2">
+                <h3>Resources</h3>
+                <p>Academy</p>
+                <p>Curriculum</p>
+                <p>Videos</p>
+                <p>Hosting</p>
+                <p>Developers</p>
+                <p>Support</p>
+            </div>
+
+
+            <div class="box-3">
+                <h3>Company</h3>
+                <p>About Us</p>
+                <p>Careers</p>
+                <p>FAQS</p>
+                <p>Teams</p>
+                <p>Contact Us</p>
+            </div>
+
+        </div>
+
+        <div class="credit">
+            <div class="copyright">
+               &copy; 2023 | all rights reserved!
+            </div>
+            <div class="privacy">
+                <p>Privacy Policy</p>
+                <p>Terms of Use</p>
+                <p>Sales and Refunds Legal</p>
+                <p>Site Map</p>
+            </div>
+            <div class="img">
+                <img src="../images/courses-img/arrows.png" alt="">
+            </div>
     </section>
 
     <script src="../js/courseDetails.js"></script>
