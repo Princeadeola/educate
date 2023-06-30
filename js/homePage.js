@@ -107,3 +107,27 @@ var swiper = new Swiper(".mySwiper", {
     },
     
   });
+
+
+  // 
+  function toggleVisibility(buttonId, contentId) {
+    const button = document.getElementById(buttonId);
+    const content = document.getElementById(contentId);
+
+    button.addEventListener('click', function() {
+      const isContentVisible = content.style.display === 'block';
+      content.style.display = isContentVisible ? 'none' : 'block';
+    });
+  }
+
+  // Toggle for "Are the courses free?"
+  toggleVisibility('toggle-button1', 'toggle-content1');
+  toggleVisibility('toggle-button2', 'toggle-content2');
+  toggleVisibility('toggle-button3', 'toggle-content3');
+  toggleVisibility('toggle-button4', 'toggle-content4');
+  toggleVisibility('toggle-button5', 'toggle-content5');
+  toggleVisibility('toggle-button6', 'toggle-content6');
+  toggleVisibility('toggle-button7', 'toggle-content7');
+  toggleVisibility('toggle-button8', 'toggle-content8');
+
+  // Add more toggle calls for the remaining questions
