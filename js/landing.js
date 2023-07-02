@@ -8,12 +8,12 @@ openMenu.addEventListener('click', () => {
 });
 
 closeMenu.addEventListener("click", () => {
-    sideMenu.style.right = '-50%';
+    sideMenu.style.right = '-60%';
 });
 
 document.addEventListener('click', (event) => {
     const targetElement = event.target;
     if (!sideMenu.contains(targetElement) && targetElement !== openMenu) {
-        sideMenu.style.right = '-50%';
+        sideMenu.style.right = '-60%';
     }
 });

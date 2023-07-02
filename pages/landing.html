@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/landing.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="output-style.css">
     <title>Document</title>
 </head>
 <body class="bg-gray-100 text-black">
-    <header class="w-full fixed flex top-0 flex-row h-20 px-6 py-4 bg-white items-center justify-between gap-5 md:gap-0">
+    <nav class="w-full fixed flex top-0 flex-row h-20 px-6 py-4 bg-white items-center justify-between gap-5 md:gap-0">
 
         <div class="flex flex-row items-center gap-1">
             <img class="md:w-6 w-7" src="../images/fluent_learning-app-20-filled.svg" alt="Educate">
@@ -36,11 +37,11 @@
             <li>English
                 <i class="ri-arrow-down-s-line ml-2 mt-6"></i>
             </li>
-            <button class="rounded-full bg-blue-500 text-white px-4 py-1">Join for free</button>
+            <button class="rounded-full bg-blue-500 text-white px-4 py-1 hover:bg-blue-900">Join for free</button>
         </ul>
 
 
-        <ul class="items-center fixed text-sm z-50 bg-white justify-evenly font-medium h-full py-1 w-[50%] border-l border-l-slate-900 right-[-50%] top-0 gap-0 ease-in-out duration-100 sidebar">
+        <ul class="items-center fixed text-sm z-50 bg-white justify-evenly font-medium h-full py-1 w-[50%] border-l border-l-slate-900 right-[-60%] top-0 gap-0 ease-in-out duration-100 sidebar">
             <li class="p-4 mt-10 md:mt-5 lg:mt-0">Home</li>
             <li class="p-4">Courses
                 <i class="ri-arrow-down-s-line ml-2"></i>
@@ -52,13 +53,13 @@
                 <i class="ri-arrow-down-s-line ml-2"></i>
             </li>
             <li class="p-4">
-                <ul class="flex flex-row gap-9 items-center">
+                <ul class="flex flex-col md:flex-row gap-9 items-center">
                     <li class="">
                         English
                         <i class="ri-arrow-down-s-line ml-2 mt-6"></i>
                     </li>
                     <li class="">
-                        <button class="rounded-full md:text-sm text-xs bg-blue-500 text-white px-4 py-1 -mt-[4]">Join for free</button>
+                        <button class="rounded-full md:text-sm text-xs bg-blue-500 text-white px-4 py-1 -mt-[4] hover:bg-blue-900">Join for free</button>
                     </li>
                 </ul>
             </li>
@@ -68,23 +69,55 @@
       
         <i class="ri-search-line font-semibold absolute right-20 lg:hidden"></i>
         <i class="ri-menu-fill top-2.5 right-3 font-normal lg:hidden text-2xl cursor-pointer open"></i>
-    </header>
+    </nav>
 
     <!-- HERO SECTION -->
-    <div class="bg-blue-100 w-full h-screenitems-center justify-evenly mt-20">
-        <div class="p-5 mx-auto grid md:grid-cols-2 items-center justify-between">
-            <div class="items-center mx-auto text-center">
-                <h1 class="font-bold mx-auto text-4xl md:text-5xl">Creating a <span class="text-[#043021]">Better</span> Educational Foundation </h1>
-                <p></p>
-                <div>
-                    <button></button>
-                    <button></button>
+    <div class="bg-blue-100 items-center justify-between mt-10 md:mt-20 py-10 md:py-16 px-1 md:px-4">
+        <div class="grid mx-auto md:grid-cols-2 bg-transparent items-center gap-9 justify-between">
+            <div class="items-center text-center md:text-left py-10 md:py-20 px-8">
+                <h1 class="font-bold mx-auto text-3xl md:text-5xl">Creating a <span class="text-[#043021]">Better</span> Educational Foundation </h1>
+                <p class="mt-4 md:text-2xl text-xl text-gray-500">Get access to over a  +1000 global courses and learn at your own pace</p>
+                <div class="mt-4 grid md:grid-cols-2 items-center justify-center md:justify-between gap-5 p-3 mx-auto">
+                    <button class="rounded-full md:text-xl text-sm bg-blue-600 text-white px-5 py-3 md:px-0 md:py-2 hover:bg-blue-900 outline-none">Get Started</button>
+                    <button class="rounded-full md:text-xl text-sm text-blue-600 bg-transparent hidden md:block hover:bg-white outline-none border border-blue-500 px-0 py-2">log in</button>
+                </div>
+            </div>
+            
+            <div class="md:w-[400px] md:h-[400px] w-52 h-52 mx-auto rounded-full bg-transparent border border-animate-pulse border-blue-300 md:border-blue-200 relative flex items-center justify-center">
+                <img src="../images/Question-Mark.svg" alt="" class="absolute w-10 h-10 md:w-16 md:h-16 -top-2 right-6 md:top-0 md:right-14">
+                <div class="md:w-[360px] md:h-[360px] w-48 h-48 rounded-full bg-transparent border md:border-4 border-blue-300 md:border-blue-200 border-animate-pulse flex items-center justify-center">
+                        <img src="../images/pexels-julia-m-cameron-4144102 1.svg" alt="A Student" class="w-44 h-44 md:w-80 md:h-80 bg-blue-300 rounded-full">
+                        <img src="../images/Earth-Globe.svg" alt="" class="absolute w-6 h-6 md:w-11 md:h-11 top-30 -left-1 md:top-30 md:-left-0">
+                        <img src="../images/Books.svg" alt="" class="absolute w-11 h-11 md:w-20 md:h-20 -bottom-2.5 md:-bottom-3 left-8 md:left-12">
+                            <img src="../images/Table-Clock.svg" alt="" class="absolute w-11 h-11 md:w-20 md:h-20 -right-4 top-32 md:-right-2.5 md:top-72">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="items-center justify-center">
+        <div class="grid grid-cols-1 items-center justify-between w-full relative px-8">
+            <div class="flex flex-row flex-grow mx-auto bg-white h-16 md:h-28 shadow-lg rounded-sm items-center justify-between border-none absolute -top-5 md:left-1/2 transform md:-translate-x-1/2 px-5 py-10 md:py-5">
+                <div class="grid grid-cols-1 text-center items-center py-2 md:py-5 md:px-10 gap-0 md:gap-2">
+                    <h3 class="font-bold text-xs md:text-[15px]">15k+</h3>
+                    <p class="uppercase text-xs md:text-[15px]">active learners</p>
+                </div>
+
+                <div class="border-l border-gray-950 h-7 my-1"></div>
+                 <div class="grid grid-cols-1 text-center items-center py-2 md:py-5 md:px-10 gap-0 md:gap-2">
+                    <h3 class="font-bold text-xs md:text-[15px]">500k+</h3>
+                    <p class="uppercase text-xs md:text-[15px]">approved courses</p>
+                </div>
+
+                <div class="border-l border-gray-950 h-7 my-1"></div>
+                 <div class="grid grid-cols-1 text-center items-center py-2 md:py-5 md:px-10 gap-0 md:gap-2">
+                    <h3 class="font-bold text-xs md:text-[15px]">2k5</h3>
+                    <p class="uppercase text-xs md:text-[15px]">approved tutors</p>
                 </div>
             </div>
             
         </div>
     </div>
-
 
     <script src="../js/landing.js"></script>
 </body>
