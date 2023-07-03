@@ -10,6 +10,7 @@
 }
 
 body {
+     /* padding: 0 3rem 0 3rem; */
     /* padding: 0 3rem 0 3rem; */
     font-family: 'Inter', sans-serif;
 }
@@ -77,6 +78,9 @@ body {
 
 .course-options_content {
     padding: 2rem 10rem 3.6rem 3rem;
+}
+
+.course-options_content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,6 +105,20 @@ body {
     background-color: var(--color-thickgreen);
 }
 
+.options_list li::after,
+.options_list li a {
+    position: relative;
+    color: black;
+}
+
+.options_list li a.active{
+    color: var(--color-thickgreen);
+}
+
+.options_list li.active::after {
+    background-color: var(--color-thickgreen);
+}
+
 .options_list li::after {
     content: ' ';
     display: block;
@@ -115,7 +133,7 @@ body {
 
 .options_list li:hover::after,
 .options_list li.active::after{
-    width: 100%;
+   width: 100%;
 }
 
 /* Button  */
@@ -143,6 +161,7 @@ body {
 
 .course-step_container {
     padding: 0 3rem 5rem 3rem;
+    padding: 0 0 5rem 0;
 }
 
 .course-step_content {
@@ -176,6 +195,7 @@ body {
 }
 
 /* <!-- ------ COURSE DESCRIPTION -------------------  -->  */
+
 .course_description {
     padding: 0 3rem 0 3rem;
 }
@@ -198,6 +218,7 @@ body {
 
 .learn-course h3{
     padding-bottom: 1rem;
+    padding: 0 0 1rem 0;
 }
 
 .content {
@@ -217,6 +238,8 @@ body {
 .content-bullet-point p {
     padding: 0 0 1.3rem 0;
 }
+
+
 /* ------------- CURRICULUM SECTION -------------------------  */
 
 .curriculum_container {
@@ -231,11 +254,23 @@ body {
 .list li {
     padding: 0 0 1.9rem 0;
     cursor: pointer;
+}
+
+.curriculum_container h3{
+    padding: 3rem 0 1rem 0;
+}
+
+.curriculum_list li {
+    padding: 0 0 1.9rem 0;
+}
+
+.curriculum_list li{
     font-size: 1.1rem;
     color: black;
     text-transform: capitalize;
     font-weight: 500;
 }
+
 
 .curriculum_list li.active{
     /* color: blue; */
@@ -243,7 +278,13 @@ body {
 }
 
 .curriculum_list li:hover,
-.curriculum_list li:hover::before{
+.curriculum_list li:hover::before,
+.curriculum_list li a.active {
+    color: var(--color-thickgreen);
+}
+
+.curriculum_list li a:hover,
+.curriculum_list li a:hover::before{
     color: var(--color-thickgreen);
     transition: all ease-in-out 250ms;
 }
@@ -266,7 +307,9 @@ body {
     padding: 1rem 0 1.5rem 0;
 }
 
-.curriculum_details a{
+/* .curriculum_details a */
+
+.curriculum_details a {
     color: var(--color-thickgreen);
 }
 
@@ -282,6 +325,7 @@ body {
 .career-title_body h3{
     padding: 0 0 0.5rem 0;
 }
+
 
  /* FAQS STYLING  */
 
@@ -397,9 +441,13 @@ body {
         display: none;
     }
 
+    .options_list {
+        flex-direction: column;
+    }
+
     .certified-course_section {
         flex-direction: column;
-        gap: 0.9rem;
+        gap: 0.8rem;
     }
 
     .steps_body {
@@ -418,15 +466,18 @@ body {
         align-items: center;
     }
 
+
     .curriculum_content {
         flex-direction: column;
         gap: 1rem;
         align-items: center;
     }
 
+
     .curriculum_details {
         width: 100%;
     }
+
 }
 
 @media screen and (max-width: 432px) {
@@ -436,4 +487,3 @@ body {
         gap: 0.5rem;
     }
 }
-
