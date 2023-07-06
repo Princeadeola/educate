@@ -1,19 +1,21 @@
 // OPTION LISTS 
 function openTab(evt, option) {
-    var i, x, tablinks;
-    x = document.getElementsByClassName("hail");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < x.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(option).style.display = "block";
-    evt.currentTarget.className += " active";
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tabbeb");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
   }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(option).style.display = "block";
+  evt.currentTarget.className += " active";
+}
 
-  function openTab(evt, scroll) {
+// Min tab 
+
+  function openMinTab(evt, scroll) {
     var i, x, tablinks;
     x = document.getElementsByClassName("tabbeb");
     for (i = 0; i < x.length; i++) {
@@ -53,6 +55,8 @@ function openCurri(evt, curriculumlist) {
     }
 }
 
+
+// Min scroll Tab 
 const tabsBox = document.querySelector(".tabs-box"),
 allTabs = tabsBox.querySelectorAll(".tab"),
 arrowIcons = document.querySelectorAll(".icon i");
