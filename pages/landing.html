@@ -3,77 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tubi Obaloluwa">
     <link rel="stylesheet" href="../styles/landing.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="output-style.css">
-    <title>Document</title>
+    <!-- TUBI OBALOLUWA -->
+    <title>Educate</title>
 </head>
-<body class="bg-gray-100 text-black">
-    <nav class="w-full fixed flex top-0 flex-row h-20 px-6 py-4 bg-white items-center justify-between gap-5 md:gap-0">
+<body class="bg-gray-100 text-black p-0 m-0 outline-none border-none">
+        <nav class="flex w-full mx-auto fixed top-0 h-20 px-6 py-4 bg-white z-50 items-center justify-between gap-5 md:gap-0">
 
-        <div class="flex flex-row items-center gap-1">
-            <img class="md:w-6 w-7" src="../images/fluent_learning-app-20-filled.svg" alt="Educate">
-            <h1 class="font-bold md:text-[20px] text-[25px] text-[#043021]">Educate</h1>
-        </div>
+            <div class="flex flex-row items-center gap-1">
+                <img class="md:w-6 w-7" src="../images/fluent_learning-app-20-filled.svg" alt="Educate">
+                <h1 class="font-bold md:text-[20px] text-[25px] text-[#043021]">Educate</h1>
+            </div>
 
-        <ul class="items-center hidden md:hidden lg:relative lg:bg-transparent text-sm bg-white justify-evenly lg:flex font-medium md:py-0 md:gap-1 sm:gap-3 ease-in-out duration-100">
-            <li class="p-3 mt-10 md:mt-0">Home</li>
-            <li class="p-3">Courses
-                <i class="ri-arrow-down-s-line ml-0 md:ml-2"></i>
-            </li>
-            <li class="p-3">Tests
-                <i class="ri-arrow-down-s-line ml-0 md:ml-2"></i>
-            </li>
-            <li class="p-3">Resources
-                <i class="ri-arrow-down-s-line ml-0 md:ml-2"></i>
-            </li>
-        </ul>
+            <ul class="items-center hidden md:hidden lg:relative lg:bg-transparent text-sm bg-white justify-evenly lg:flex font-medium md:py-0 md:gap-1 sm:gap-3 ease-in-out duration-100">
+                <li class="p-3 mt-10 md:mt-0">Home</li>
+                <li class="p-3">Courses
+                    <i class="ri-arrow-down-s-line ml-0 md:ml-2"></i>
+                </li>
+                <li class="p-3">Tests
+                    <i class="ri-arrow-down-s-line ml-0 md:ml-2"></i>
+                </li>
+                <li class="p-3">Resources
+                    <i class="ri-arrow-down-s-line ml-0 md:ml-2"></i>
+                </li>
+            </ul>
 
-        <ul class="md:hidden lg:flex lg:flex-row gap-2 lg:gap-5 hidden items-center justify-between font-medium">
-            <li class="relative items-center justify-center">
-                <i class="ri-search-line absolute left-0 top-0 ml-2 mt-1"></i>
-                <input type="text" class="px-2 py-1 pl-9 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Search">
-            </li>
-            <li>English
-                <i class="ri-arrow-down-s-line ml-2 mt-6"></i>
-            </li>
-            <button class="rounded-full bg-blue-500 text-white px-4 py-1 hover:bg-blue-900">Join for free</button>
-        </ul>
+            <ul class="md:hidden lg:flex gap-2 lg:gap-2 hidden items-center justify-between font-medium">
+                <li class="relative items-center justify-center">
+                    <i class="ri-search-line absolute left-0 top-0 ml-2 mt-1"></i>
+                    <input type="text" class="px-2 py-1 pl-9 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Search">
+                </li>
+                <li class="text-sm">English
+                    <i class="ri-arrow-down-s-line ml-2 mt-6"></i>
+                </li>
+                <li>
+                    <button class="rounded-full bg-blue-500 md:text-sm text-xs text-white px-4 py-1 hover:bg-blue-900">Join for free</button>
+                </li>
+            </ul>
+        
+            <i class="ri-search-line font-semibold absolute right-20 lg:hidden"></i>
+            <i class="ri-menu-fill top-2.5 right-3 font-normal lg:hidden text-2xl cursor-pointer open"></i>
+        </nav>
 
-
-        <ul class="items-center fixed text-sm z-50 bg-white justify-evenly font-medium h-full py-1 w-[50%] border-l border-l-slate-900 right-[-60%] top-0 gap-0 ease-in-out duration-100 sidebar">
-            <li class="p-4 mt-10 md:mt-5 lg:mt-0">Home</li>
-            <li class="p-4">Courses
-                <i class="ri-arrow-down-s-line ml-2"></i>
-            </li>
-            <li class="p-4">Tests
-                <i class="ri-arrow-down-s-line ml-2"></i>
-            </li>
-            <li class="p-4">Resources
-                <i class="ri-arrow-down-s-line ml-2"></i>
-            </li>
-            <li class="p-4">
-                <ul class="flex flex-col md:flex-row gap-9 items-center">
-                    <li class="">
-                        English
-                        <i class="ri-arrow-down-s-line ml-2 mt-6"></i>
+        <!-- SIDEBAR -->
+            <ul class="items-center fixed text-sm z-50 bg-white justify-evenly lg:hidden xl:hidden font-medium h-full py-1 w-[70%] md:w-[40%] right-[-100%] top-0 gap-0 ease-in-out duration-100 sidebar">
+                    <li class="p-4 mt-10 md:mt-5 lg:mt-0">Home</li>
+                    <li class="p-4">Courses
+                        <i class="ri-arrow-down-s-line ml-2"></i>
                     </li>
-                    <li class="">
-                        <button class="rounded-full md:text-sm text-xs bg-blue-500 text-white px-4 py-1 -mt-[4] hover:bg-blue-900">Join for free</button>
+                    <li class="p-4">Tests
+                        <i class="ri-arrow-down-s-line ml-2"></i>
                     </li>
-                </ul>
-            </li>
-            
-            <i class="ri-close-line absolute top-2.5 md:top-3 right-5 font-normal lg:hidden text-2xl cursor-pointer close"></i>
-        </ul>
-      
-        <i class="ri-search-line font-semibold absolute right-20 lg:hidden"></i>
-        <i class="ri-menu-fill top-2.5 right-3 font-normal lg:hidden text-2xl cursor-pointer open"></i>
-    </nav>
+                    <li class="p-4">Resources
+                        <i class="ri-arrow-down-s-line ml-2"></i>
+                    </li>
+                    <li class="p-4">
+                        <ul class="flex flex-wrap gap-9 items-center">
+                            <li class="">
+                                English
+                                <i class="ri-arrow-down-s-line ml-2 mt-6"></i>
+                            </li>
+                            <li class="">
+                                <button class="rounded-full md:text-sm text-xs bg-blue-500 text-white px-4 py-1 -mt-[4] hover:bg-blue-900">Join for free</button>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <i class="ri-close-line absolute top-2.5 md:top-3 right-5 font-normal lg:hidden text-2xl cursor-pointer close"></i>
+            </ul>
+
+
+    
+
 
     <!-- HERO SECTION -->
-    <div class="bg-blue-100 items-center justify-between mt-10 md:mt-20 py-10 md:py-16 px-1 md:px-4">
-        <div class="grid mx-auto md:grid-cols-2 bg-transparent items-center gap-9 justify-between">
+    <div class="bg-blue-100 items-center justify-between">
+        <div class="grid mx-auto max-w-[1240px] md:grid-cols-2 bg-transparent items-center gap-9 justify-between mt-10 md:mt-20 py-10 md:py-16 px-1 md:px-4">
             <div class="items-center text-center md:text-left py-10 md:py-20 px-8">
                 <h1 class="font-bold mx-auto text-3xl md:text-5xl">Creating a <span class="text-[#043021]">Better</span> Educational Foundation </h1>
                 <p class="mt-4 md:text-2xl text-xl text-gray-500">Get access to over a  +1000 global courses and learn at your own pace</p>
@@ -84,40 +92,158 @@
             </div>
             
             <div class="md:w-[400px] md:h-[400px] w-52 h-52 mx-auto rounded-full bg-transparent border border-animate-pulse border-blue-300 md:border-blue-200 relative flex items-center justify-center">
-                <img src="../images/Question-Mark.svg" alt="" class="absolute w-10 h-10 md:w-16 md:h-16 -top-2 right-6 md:top-0 md:right-14">
+                <img src="../images/Question-Mark.svg" alt="question mark" class="absolute w-10 h-10 md:w-16 md:h-16 -top-2 right-6 md:top-0 md:right-14">
                 <div class="md:w-[360px] md:h-[360px] w-48 h-48 rounded-full bg-transparent border md:border-4 border-blue-300 md:border-blue-200 border-animate-pulse flex items-center justify-center">
                         <img src="../images/pexels-julia-m-cameron-4144102 1.svg" alt="A Student" class="w-44 h-44 md:w-80 md:h-80 bg-blue-300 rounded-full">
-                        <img src="../images/Earth-Globe.svg" alt="" class="absolute w-6 h-6 md:w-11 md:h-11 top-30 -left-1 md:top-30 md:-left-0">
-                        <img src="../images/Books.svg" alt="" class="absolute w-11 h-11 md:w-20 md:h-20 -bottom-2.5 md:-bottom-3 left-8 md:left-12">
-                            <img src="../images/Table-Clock.svg" alt="" class="absolute w-11 h-11 md:w-20 md:h-20 -right-4 top-32 md:-right-2.5 md:top-72">
+                        <img src="../images/Earth-Globe.svg" alt="globe" class="absolute w-6 h-6 md:w-11 md:h-11 top-30 -left-1 md:top-30 md:-left-0">
+                        <img src="../images/Books.svg" alt="books" class="absolute w-11 h-11 md:w-20 md:h-20 -bottom-2.5 md:-bottom-3 left-8 md:left-12">
+                            <img src="../images/Table-Clock.svg" alt="table clock" class="absolute w-11 h-11 md:w-20 md:h-20 -right-4 top-32 md:-right-2.5 md:top-72">
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="items-center justify-center">
-        <div class="grid grid-cols-1 items-center justify-between w-full relative px-8">
-            <div class="flex flex-row flex-grow mx-auto bg-white h-16 md:h-28 shadow-lg rounded-sm items-center justify-between border-none absolute -top-5 md:left-1/2 transform md:-translate-x-1/2 px-5 py-10 md:py-5">
-                <div class="grid grid-cols-1 text-center items-center py-2 md:py-5 md:px-10 gap-0 md:gap-2">
+
+    <!-- ASSOCIATE UNIVERSITIES/ORGANIZATIONS -->
+    <div class="flex flex-col w-full items-center justify-center bg-slate-50">
+        <div class="grid grid-cols-1 mx-auto max-w-[1240px] items-center relative px-8 gap-9">
+            <div class="flex flex-row flex-grow mx-auto bg-white h-16 md:h-20 md:w-auto shadow-lg rounded-md items-center justify-between border-none -mt-5 px-5 py-10 md:py-5">
+                <div class="grid grid-cols-1 text-center items-center py-2 md:py-5 md:px-10 gap-1 md:gap-4">
                     <h3 class="font-bold text-xs md:text-[15px]">15k+</h3>
                     <p class="uppercase text-xs md:text-[15px]">active learners</p>
                 </div>
 
                 <div class="border-l border-gray-950 h-7 my-1"></div>
-                 <div class="grid grid-cols-1 text-center items-center py-2 md:py-5 md:px-10 gap-0 md:gap-2">
+                 <div class="grid grid-cols-1 text-center items-center py-2 md:py-5 md:px-10 gap-1 md:gap-4">
                     <h3 class="font-bold text-xs md:text-[15px]">500k+</h3>
                     <p class="uppercase text-xs md:text-[15px]">approved courses</p>
                 </div>
 
                 <div class="border-l border-gray-950 h-7 my-1"></div>
-                 <div class="grid grid-cols-1 text-center items-center py-2 md:py-5 md:px-10 gap-0 md:gap-2">
+                 <div class="grid grid-cols-1 text-center items-center py-2 md:py-5 md:px-10 gap-1 md:gap-4">
                     <h3 class="font-bold text-xs md:text-[15px]">2k5</h3>
                     <p class="uppercase text-xs md:text-[15px]">approved tutors</p>
                 </div>
             </div>
-            
+
+             <div class="flex flex-col flex-grow w-full items-center justify-between mt-15 px-0 md:px-5 py-10 md:py-5">
+                <h3 class="text-center font-semibold text-md md:text-2xl">We collaborate with Top Universities, Organizations and Companies</h3>
+                <div class="flex flex-wrap w-full md:w-[80%] items-center justify-evenly p-4 gap-1 md:gap-4 mt-3">
+                        <img src="../images/Google svg.svg" alt="Google" class="object-contain max-w-[60px] md:max-w-none">
+                        <img src="../images/Microsoft svg.svg" alt="Microsoft" class="object-contain max-w-[60px] md:max-w-none">
+                        <img src="../images/Coursera svg.svg" alt="Coursera" class="object-contain max-w-[60px] md:max-w-none">
+                        <img src="../images/Amazon svg.svg" alt="Amazon" class="object-contain max-w-[60px] md:max-w-none">
+                        <img src="../images/Universia - png.svg" alt="Universia" class="object-contain max-w-[60px] md:max-w-none">
+                        <img src="../images/Duke University svg.svg" alt="Duke University" class="object-contain max-w-[60px] md:max-w-none">
+                        <img src="../images/Chevron svg.svg" alt="Chevron" class="object-contain max-w-[60px] md:max-w-none">
+                        <img src="../images/Stamford International University - png.svg" alt="Stamford International University" class="object-contain max-w-[60px] md:max-w-none">
+                </div>
+            </div>
         </div>
     </div>
+
+
+
+    <!-- MISSION AND VISION -->
+    <section class="flex flex-col w-full items-center justify-between bg-white">
+
+        <div class="grid grid-cols-1 items-center justify-evenly max-w-[1240px] mx-auto p-5 border-2 border-red-950">
+            <div class="flex flex-col w-96 mx-auto md:mr-auto text-left items-start justify-between">
+                <h3 class="font-semibold text-2xl">Why choose Educate?</h3>
+                <p class="text-gray-600 text-sm">What our platform would offer you</p>
+            </div>
+
+            <div class="flex flex-wrap items-start justify-between w-full">
+                <div class="grid grid-cols-1 items-center justify-between order-2 w-[37%] p-5 gap-4 mt-3">
+                    <div class="flex flex-col items-start justify-between text-left w-96 h-40 mx-auto mt-3">
+                        <i class="ri-money-dollar-circle-line text-green-600 text-2xl"></i>
+                        <h3 class="font-semibold text-xl mt-2">Learn for Free</h3>
+                        <p class="text-xs font-normal mt-2">At  educate we provide free access to courses. You get to learn different courses of your choice,without having to pay a dime for these courses</p>
+                        <button class="text-sm mt-1"><a href="/" class="text-blue-500 hover:ml-3">Read more <i class="ri-arrow-right-line ml-2"></i></a></button>
+                    </div>
+
+                    <div class="flex flex-col items-start justify-between text-left w-96 h-auto mx-auto mt-3">
+                        <i class="ri-global-line text-blue-600 text-2xl"></i>
+                        <h3 class="font-semibold text-xl mt-2">Learn from anywhere</h3>
+                        <p class="text-xs font-normal mt-2">At  educate we are not country or location restricted. You get to learn different courses of your choice, from anywhere in the world.</p>
+                        <button class="text-sm mt-1"><a href="/" class="text-blue-500 hover:ml-3">Read more <i class="ri-arrow-right-line ml-2"></i></a></button>
+                    </div>
+
+                    <div class="flex flex-col items-start justify-between text-left w-96 h-auto mx-auto mt-3">
+                        <i class="ri-macbook-line text-purple-600 text-2xl"></i>
+                        <h3 class="font-semibold text-xl mt-2">Practice test</h3>
+                        <p class="text-xs font-normal">At  educate we provide free access to courses. You get to learn different courses of your choice,without having to pay a dime for these courses</p>
+                        <button class="text-sm mt-1"><a href="/" class="text-blue-500 hover:ml-3">Read more <i class="ri-arrow-right-line ml-2"></i></a></button>
+                    </div>
+
+                    <div class="flex flex-col items-start justify-between text-left w-96 h-auto mx-auto mt-3">
+                        <i class="ri-time-line text-yellow-600 text-2xl"></i>
+                        <h3 class="font-semibold text-xl mt-2">Learn at your pace</h3>
+                        <p class="text-xs font-normal mt-2">At  educate we provide free access to courses. You get to learn different courses of your choice,without having to pay a dime for these courses</p>
+                        <button class="text-sm mt-1"><a href="/" class="text-blue-500 hover:ml-3">Read more <i class="ri-arrow-right-line ml-2 hover:ml-3"></i></a></button>
+                    </div>
+                </div>
+                
+                <div class="grid items-center justify-center md:w-[60%] order-1 p-5 gap-4 mt-3">
+                    <div class="grid items-center mx-auto relative mt-8">
+                        <div class="bg-blue-100 h-[30rem] w-[20rem] rounded-3xl"></div>
+                        <img src="../images/Frame 1494.png" alt="A student reading" class="object-contain h-[30rem] w-[20rem] absolute -top-6 left-6">
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+    </section>
+
+
+
+    <section class="flex flex-col w-full items-center justify-between bg-white">
+
+        <div class="grid grid-cols-1 items-center justify-evenly mx-auto max-w-[1240px] p-5">
+            <div class="flex flex-col w-96 mx-auto md:mr-auto items-start justify-start">
+                <h3 class="font-semibold text-2xl">Resources to help you grow</h3>
+                <p class="text-gray-600 text-sm">We provide our students with materials and resources</p>
+            </div>
+
+            <div class="flex flex-wrap items-start justify-between w-full">
+                <div class="grid grid-cols-1 items-center justify-between order-1 md:w-[40%] p-5 gap-4 mt-4">
+                    <p class="text-xs font-normal mt-2">At Educate we are a firm believer in providing good education for individuals regardless of their backgrounds. 
+                    We offer a wide range options of learning, quality tutors and a library of resources to help you learn, improve and grow. Get free acces to Books, 
+                    Files and a host of videos that can help you in your learning process.</p>
+                    <div class="flex flex-row flex-grow mx-auto bg-white h-16 md:h-20 md:w-auto shadow-lg rounded-md items-center justify-between border-none px-5 py-10 md:py-5">
+                        <div class="grid grid-cols-1 text-center items-center py-2 md:py-5 md:px-10 gap-1 md:gap-4">
+                            <h3 class="font-bold text-xs md:text-[15px]">22K+</h3>
+                            <p class="capitalize text-xs md:text-[15px]">Videos</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 text-center items-center py-2 md:py-5 md:px-10 gap-1 md:gap-4">
+                            <h3 class="font-bold text-xs md:text-[15px]">100K+</h3>
+                            <p class="uppercase text-xs md:text-[15px]">e books</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 text-center items-center py-2 md:py-5 md:px-10 gap-1 md:gap-4">
+                            <h3 class="font-bold text-xs md:text-[15px]">100K+</h3>
+                            <p class="capitalize text-xs md:text-[15px]">files</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid items-center justify-center md:w-[60%] order-1 md:order-2 p-5 gap-4 mt-3">
+                    <div class="flex items-center mx-auto relative mt-8">
+                        <div class="bg-blue-100 h-[30rem] w-[20rem] rounded-3xl"></div>
+                        <img src="../images/Frame 1000002911.png" alt="Excited student" class="object-contain h-[30rem] w-[20rem] absolute -mt-12 left-6">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+            
+
+        
+    
 
     <script src="../js/landing.js"></script>
 </body>
