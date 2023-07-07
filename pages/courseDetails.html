@@ -58,9 +58,21 @@
 
     <!-- ------- COURSE OPTION SECTION -------------  -->
 
+    <div class="wrapper remove">
+        <div class="icon"><i id="left" class="uil uil-angle-left-b"></i></div>
+        <ul class="tabs-box">
+            <li class="w3-bar-item w3-button b-link tab active" onclick="openMinTab(event,'first')">Course Details</li>
+            <li class="w3-bar-item w3-button b-link tab" onclick="openMinTab(event,'second')">Curriculum</li>
+            <li class="w3-bar-item w3-button b-link tab" onclick="openMinTab(event,'third')">FAQ</li>
+            <li class="w3-bar-item w3-button b-link tab" onclick="openMinTab(event,'fourth')">Instructors</li>
+            <li class="w3-bar-item w3-button b-link tab" onclick="openMinTab(event,'fifth')">Reviews</li>
+            <button class="button button1 b-link"><a href="#">Register</a></button>
+        </ul>
+        <div class="icon"><i id="right" class="uil uil-angle-right-b"></i></div>
+    </div>
+
     <section class="course-options_container">
         <div class="course-options_content">
-
             <div class="w3-bar w3-black">
                 <ul class="options_list">
                     <li class="w3-bar-item w3-button tablink active" onclick="openTab(event,'first')">Course Details</li>
@@ -70,14 +82,11 @@
                     <li class="w3-bar-item w3-button tablink" onclick="openTab(event,'fifth')">Reviews</li>
                 </ul>
             </div>
-            
             <button class="button button1"><a href="#">Register</a></button>
         </div>
     </section>
-      
-    <!-- content  -->
 
-      <div id="first" class="w3-container w3-border tabbeb">
+    <div id="first" class="w3-container w3-border tabbeb">
         <div class="course-step_content">
             <div class="step_paragraph">
                 <h2>A course to set you on the right part of your design journey</h2>
@@ -197,6 +206,8 @@
         </div>
     </section>
 
+    <!-- ------------------- CURRICULUM ---------------------  -->
+    
     <!-- ---------- PROSPECTIVE CAREER -------------  -->
 
     <section class="prospective-career_container">
@@ -251,8 +262,8 @@
         </div>
     </section>
     </div>
-    
-      <div id="second" class="w3-container w3-border tabbeb" style="display:none">
+
+    <div id="second" class="w3-container w3-border tabbeb" style="display:none">
         <section class="curriculum_container" id="curriculum">
             <h3>Curriculum</h3>
             <div class="curriculum_content">
@@ -362,8 +373,8 @@
         </section>
       </div>
 
-       <!-- FREQUENTLY ASKED QUESTION  -->
-     <div id="third" class="w3-container tabbeb" style="display:none">
+          <!-- FREQUENTLY ASKED QUESTION  -->
+     <div id="third" class="w3-container w3-border tabbeb" style="display:none">
         <div class="faq-container">
             <h1>Frequently Asked Questions</h1>
     
@@ -432,13 +443,14 @@
         </div> <!-- END FAQS  -->
       </div>
 
-      <div id="fourth" class="w3-container tabbeb" style="display:none">
-        <h1>Instructors <style> #fourth h1{padding-bottom: 2rem;}</style></h1>
+      <div id="fourth" class="w3-container w3-border tabbeb" style="display:none">
+        <h1>Instructors <style> #fourth h1{padding-bottom: 8rem;}</style></h1>
       </div>
 
-      <div id="fifth" class="w3-container tabbeb" style="display:none">
-        <h1>Reviews <style> #fifth h1{padding-bottom: 2rem;}</style></h1>
+      <div id="fifth" class="w3-container w3-border tabbeb" style="display:none">
+        <h1>Reviews <style> #fifth h1{padding-bottom: 8rem;}</style></h1>
       </div>
+
 
     <script src="../js/courseDetails.js"></script>
 </body>
