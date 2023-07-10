@@ -6,80 +6,84 @@
     <meta name="author" content="Tubi Obaloluwa">
     <link rel="stylesheet" href="../styles/landing.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="output-style.css">
     <!-- TUBI OBALOLUWA -->
     <title>Educate</title>
 </head>
 <body class="bg-gray-100 text-black p-0 m-0 outline-none border-none">
-        <nav class="flex w-full mx-auto fixed top-0 h-20 px-6 py-4 bg-white z-50 items-center justify-between gap-5 md:gap-0">
+    <nav class="flex w-full mx-auto fixed top-0 h-20 px-6 py-4 bg-white z-50 items-center justify-between gap-5 md:gap-0">
 
-            <div class="flex flex-row items-center gap-1">
-                <img class="md:w-6 w-7" src="../images/fluent_learning-app-20-filled.svg" alt="Educate">
-                <h1 class="font-bold md:text-[20px] text-[25px] text-[#043021]">Educate</h1>
-            </div>
+        <div class="flex flex-row items-center gap-1">
+            <img class="md:w-6 w-7" src="../images/fluent_learning-app-20-filled.svg" alt="Educate">
+            <h1 class="font-bold md:text-[20px] text-[25px] text-[#043021]">Educate</h1>
+        </div>
 
-            <ul class="items-center hidden md:hidden lg:relative lg:bg-transparent text-sm bg-white justify-evenly lg:flex font-medium md:py-0 md:gap-1 sm:gap-3 ease-in-out duration-100">
-                <li class="p-3 mt-10 md:mt-0">Home</li>
-                <li class="p-3">Courses
-                    <i class="ri-arrow-down-s-line ml-0 md:ml-2"></i>
-                </li>
-                <li class="p-3">Tests
-                    <i class="ri-arrow-down-s-line ml-0 md:ml-2"></i>
-                </li>
-                <li class="p-3">Resources
-                    <i class="ri-arrow-down-s-line ml-0 md:ml-2"></i>
-                </li>
-            </ul>
+        <ul class="items-center hidden md:hidden lg:relative lg:bg-transparent text-sm bg-white justify-evenly lg:flex font-medium md:py-0 md:gap-1 sm:gap-3 ease-in-out duration-100">
+            <li class="p-3 mt-10 md:mt-0">Home</li>
+            <li class="p-3">Courses
+                <i class="ri-arrow-down-s-line ml-0 md:ml-2"></i>
+            </li>
+            <li class="p-3">Tests
+                <i class="ri-arrow-down-s-line ml-0 md:ml-2"></i>
+            </li>
+            <li class="p-3">Resources
+                <i class="ri-arrow-down-s-line ml-0 md:ml-2"></i>
+            </li>
+        </ul>
 
-            <ul class="md:hidden lg:flex gap-2 lg:gap-2 hidden items-center justify-between font-medium">
-                <li class="relative items-center justify-center">
-                    <i class="ri-search-line absolute left-0 top-0 ml-2 mt-1"></i>
-                    <input type="text" class="px-2 py-1 pl-9 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Search">
-                </li>
-                <li class="text-sm">English
-                    <i class="ri-arrow-down-s-line ml-2 mt-6"></i>
-                </li>
-                <li>
-                    <button class="rounded-full bg-blue-500 md:text-sm text-xs text-white px-4 py-1 hover:bg-blue-900">Join for free</button>
-                </li>
-            </ul>
-        
-            <i class="ri-search-line font-semibold absolute right-20 lg:hidden"></i>
-            <i class="ri-menu-fill top-2.5 right-3 font-normal lg:hidden text-2xl cursor-pointer open"></i>
-        </nav>
+        <ul class="md:hidden lg:flex gap-2 lg:gap-2 hidden items-center justify-between font-medium">
+            <li class="relative items-center justify-center">
+                <i class="ri-search-line absolute left-0 top-0 ml-2 mt-1"></i>
+                <input type="text" class="px-2 py-1 pl-9 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Search">
+            </li>
+            <li class="text-sm">English
+                <i class="ri-arrow-down-s-line ml-2 mt-6"></i>
+            </li>
+            <li>
+                <button class="rounded-full bg-blue-500 md:text-sm text-xs text-white px-4 py-1 hover:bg-blue-900">Join for free</button>
+            </li>
+        </ul>
+    
+        <i class="ri-search-line font-semibold absolute right-20 lg:hidden"></i>
+        <i class="ri-menu-fill top-2.5 right-3 font-normal lg:hidden text-2xl cursor-pointer open"></i>
+    </nav>
 
-        <!-- SIDEBAR -->
-            <ul class="items-center fixed text-sm z-50 bg-white justify-evenly lg:hidden xl:hidden font-medium h-full py-1 w-[70%] md:w-[40%] right-[-100%] top-0 gap-0 ease-in-out duration-100 sidebar">
-                    <li class="p-4 mt-10 md:mt-5 lg:mt-0">Home</li>
-                    <li class="p-4">Courses
-                        <i class="ri-arrow-down-s-line ml-2"></i>
+            <!-- SIDEBAR -->
+    <div class="items-center fixed text-sm z-50 bg-white justify-evenly lg:hidden xl:hidden font-medium h-full py-1 w-[70%] md:w-[40%] right-[-100%] top-0 gap-0 ease-in-out duration-100 sidebar">
+            <li class="p-4 mt-10 md:mt-5 lg:mt-0">Home</li>
+            <li class="p-4">Courses
+                <i class="ri-arrow-down-s-line ml-2"></i>
+            </li>
+            <li class="p-4">Tests
+                <i class="ri-arrow-down-s-line ml-2"></i>
+            </li>
+            <li class="p-4">Resources
+                <i class="ri-arrow-down-s-line ml-2"></i>
+            </li>
+            <li class="p-4">
+                <ul class="flex flex-wrap gap-9 items-center">
+                    <li class="">
+                        English
+                        <i class="ri-arrow-down-s-line ml-2 mt-6"></i>
                     </li>
-                    <li class="p-4">Tests
-                        <i class="ri-arrow-down-s-line ml-2"></i>
+                    <li class="">
+                        <button class="rounded-full md:text-sm text-xs bg-blue-500 text-white px-4 py-1 -mt-[4] hover:bg-blue-900">Join for free</button>
                     </li>
-                    <li class="p-4">Resources
-                        <i class="ri-arrow-down-s-line ml-2"></i>
-                    </li>
-                    <li class="p-4">
-                        <ul class="flex flex-wrap gap-9 items-center">
-                            <li class="">
-                                English
-                                <i class="ri-arrow-down-s-line ml-2 mt-6"></i>
-                            </li>
-                            <li class="">
-                                <button class="rounded-full md:text-sm text-xs bg-blue-500 text-white px-4 py-1 -mt-[4] hover:bg-blue-900">Join for free</button>
-                            </li>
-                        </ul>
-                    </li>
-                    
-                    <i class="ri-close-line absolute top-2.5 md:top-3 right-5 font-normal lg:hidden text-2xl cursor-pointer close"></i>
-            </ul>
+                </ul>
+            </li>
+            
+            <i class="ri-close-line absolute top-2.5 md:top-3 right-5 font-normal lg:hidden text-2xl cursor-pointer close"></i>
+    </div>
 
 
     
 
 
-    <!-- HERO SECTION -->
+            <!-- HERO SECTION -->
     <div class="bg-blue-100 items-center justify-between">
         <div class="grid mx-auto max-w-[1240px] md:grid-cols-2 bg-transparent items-center gap-9 justify-between mt-10 md:mt-20 py-10 md:py-16 px-1 md:px-4">
             <div class="items-center text-center md:text-left py-10 md:py-20 px-8">
@@ -104,7 +108,7 @@
     </div>
 
 
-    <!-- ASSOCIATE UNIVERSITIES/ORGANIZATIONS -->
+            <!-- ASSOCIATE UNIVERSITIES/ORGANIZATIONS -->
     <div class="flex flex-col w-full items-center justify-center bg-slate-50">
         <div class="grid grid-cols-1 mx-auto max-w-[1240px] items-center relative px-8 gap-9">
             <div class="flex flex-row flex-grow mx-auto bg-white h-16 md:h-20 md:w-auto shadow-lg rounded-md items-center justify-between border-none -mt-5 px-5 py-10 md:py-5">
@@ -144,39 +148,40 @@
 
 
 
-    <!-- MISSION AND VISION -->
-    <section class="flex flex-col w-full items-center justify-between bg-white">
+            <!-- MISSION AND VISION -->
+    <section class="flex flex-col w-full items-center justify-center bg-white">
+        <div class="grid grid-cols-1 items-center justify-between max-w-[1240px] mx-auto p-5">
 
-        <div class="grid grid-cols-1 items-center justify-evenly max-w-[1240px] mx-auto p-5 border-2 border-red-950">
-            <div class="flex flex-col w-96 mx-auto md:mr-auto text-left items-start justify-between">
-                <h3 class="font-semibold text-2xl">Why choose Educate?</h3>
-                <p class="text-gray-600 text-sm">What our platform would offer you</p>
-            </div>
+            <div class="flex flex-wrap items-start justify-between w-full gap-2">
 
-            <div class="flex flex-wrap items-start justify-between w-full">
-                <div class="grid grid-cols-1 items-center justify-between order-2 w-[37%] p-5 gap-4 mt-3">
-                    <div class="flex flex-col items-start justify-between text-left w-96 h-40 mx-auto mt-3">
+                <div class="flex flex-col md:w-full w-96 mx-auto md:mr-auto text-left items-start justify-between">
+                    <h3 class="font-semibold text-xl md:text-2xl mx-auto text-center md:text-left md:mx-0">Why choose Educate?</h3>
+                    <p class="text-gray-600 text-sm mx-auto text-center md:text-left md:mx-0">What our platform would offer you</p>
+                </div>
+
+                <div class="grid grid-cols-1 items-center justify-between order-2 md:w-[45%] mx-auto p-5 gap-4 mt-3">
+                    <div class="flex flex-col flex-grow items-start justify-between text-left md:w-auto md:h-40 mx-auto mt-3">
                         <i class="ri-money-dollar-circle-line text-green-600 text-2xl"></i>
                         <h3 class="font-semibold text-xl mt-2">Learn for Free</h3>
                         <p class="text-xs font-normal mt-2">At  educate we provide free access to courses. You get to learn different courses of your choice,without having to pay a dime for these courses</p>
                         <button class="text-sm mt-1"><a href="/" class="text-blue-500 hover:ml-3">Read more <i class="ri-arrow-right-line ml-2"></i></a></button>
                     </div>
 
-                    <div class="flex flex-col items-start justify-between text-left w-96 h-auto mx-auto mt-3">
+                    <div class="flex flex-col flex-grow items-start justify-between text-left md:w-auto md:h-auto mx-auto mt-3">
                         <i class="ri-global-line text-blue-600 text-2xl"></i>
                         <h3 class="font-semibold text-xl mt-2">Learn from anywhere</h3>
                         <p class="text-xs font-normal mt-2">At  educate we are not country or location restricted. You get to learn different courses of your choice, from anywhere in the world.</p>
                         <button class="text-sm mt-1"><a href="/" class="text-blue-500 hover:ml-3">Read more <i class="ri-arrow-right-line ml-2"></i></a></button>
                     </div>
 
-                    <div class="flex flex-col items-start justify-between text-left w-96 h-auto mx-auto mt-3">
+                    <div class="flex flex-col flex-grow items-start justify-between text-left md:w-auto md:h-auto mx-auto mt-3">
                         <i class="ri-macbook-line text-purple-600 text-2xl"></i>
                         <h3 class="font-semibold text-xl mt-2">Practice test</h3>
                         <p class="text-xs font-normal">At  educate we provide free access to courses. You get to learn different courses of your choice,without having to pay a dime for these courses</p>
                         <button class="text-sm mt-1"><a href="/" class="text-blue-500 hover:ml-3">Read more <i class="ri-arrow-right-line ml-2"></i></a></button>
                     </div>
 
-                    <div class="flex flex-col items-start justify-between text-left w-96 h-auto mx-auto mt-3">
+                    <div class="flex flex-col flex-grow items-start justify-between text-left md:w-auto md:h-auto mx-auto mt-3">
                         <i class="ri-time-line text-yellow-600 text-2xl"></i>
                         <h3 class="font-semibold text-xl mt-2">Learn at your pace</h3>
                         <p class="text-xs font-normal mt-2">At  educate we provide free access to courses. You get to learn different courses of your choice,without having to pay a dime for these courses</p>
@@ -184,67 +189,365 @@
                     </div>
                 </div>
                 
-                <div class="grid items-center justify-center md:w-[60%] order-1 p-5 gap-4 mt-3">
-                    <div class="grid items-center mx-auto relative mt-8">
-                        <div class="bg-blue-100 h-[30rem] w-[20rem] rounded-3xl"></div>
-                        <img src="../images/Frame 1494.png" alt="A student reading" class="object-contain h-[30rem] w-[20rem] absolute -top-6 left-6">
+                <div class="grid items-center justify-center md:w-[50%] mx-auto order-1 p-5 gap-4 mt-3">
+                    <div class="grid items-center mx-auto justify-center relative mt-8">
+                        <div class="bg-blue-100 h-[14.5rem] w-[10rem] md:h-[30rem] md:w-[20rem] mx-auto rounded-3xl"></div>
+                        <img src="../images/Frame 1494.png" alt="A student reading" class="object-contain h-[15rem] w-[15rem] md:h-[30rem] md:w-[20rem] absolute -top-5 md:-top-6 left-3 md:left-6">
                     </div>
                 </div>
             </div>
-                
-        </div>
-    </section>
+            
+            
+            <div class="flex flex-wrap items-start justify-center w-full mt-2">
 
+                <div class="flex flex-col w-full mx-auto md:mr-auto text-left items-start justify-between">
+                    <h3 class="font-semibold text-xl md:text-2xl mx-auto text-center md:text-left md:mx-0">Resources to help you grow</h3>
+                    <p class="text-gray-600 text-sm mx-auto text-center md:text-left md:mx-0">We provide our students with materials and resources</p>
+                </div>
 
-
-    <section class="flex flex-col w-full items-center justify-between bg-white">
-
-        <div class="grid grid-cols-1 items-center justify-evenly mx-auto max-w-[1240px] p-5">
-            <div class="flex flex-col w-96 mx-auto md:mr-auto items-start justify-start">
-                <h3 class="font-semibold text-2xl">Resources to help you grow</h3>
-                <p class="text-gray-600 text-sm">We provide our students with materials and resources</p>
-            </div>
-
-            <div class="flex flex-wrap items-start justify-between w-full">
-                <div class="grid grid-cols-1 items-center justify-between order-1 md:w-[40%] p-5 gap-4 mt-4">
-                    <p class="text-xs font-normal mt-2">At Educate we are a firm believer in providing good education for individuals regardless of their backgrounds. 
+                <div class="grid grid-cols-1 items-start justify-evenly order-1 md:w-[40%] p-5 gap-4 mt-4">
+                    <p class="text-xs font-normal mt-2 w-auto mx-auto">At Educate we are a firm believer in providing good education for individuals regardless of their backgrounds. 
                     We offer a wide range options of learning, quality tutors and a library of resources to help you learn, improve and grow. Get free acces to Books, 
                     Files and a host of videos that can help you in your learning process.</p>
-                    <div class="flex flex-row flex-grow mx-auto bg-white h-16 md:h-20 md:w-auto shadow-lg rounded-md items-center justify-between border-none px-5 py-10 md:py-5">
-                        <div class="grid grid-cols-1 text-center items-center py-2 md:py-5 md:px-10 gap-1 md:gap-4">
+                    <div class="flex flex-row flex-grow bg-white h-16 md:h-20 w-auto items-center justify-between border-none px-5 py-10 md:py-5 mt-5">
+                        <div class="grid grid-cols-1 text-left items-center justify-start py-2 md:py-5 md:px-5 gap-1 md:gap-4">
                             <h3 class="font-bold text-xs md:text-[15px]">22K+</h3>
                             <p class="capitalize text-xs md:text-[15px]">Videos</p>
                         </div>
 
-                        <div class="grid grid-cols-1 text-center items-center py-2 md:py-5 md:px-10 gap-1 md:gap-4">
+                        <div class="grid grid-cols-1 text-left items-center justify-start py-2 md:py-5 md:px-5 gap-1 md:gap-4">
                             <h3 class="font-bold text-xs md:text-[15px]">100K+</h3>
                             <p class="uppercase text-xs md:text-[15px]">e books</p>
                         </div>
 
-                        <div class="grid grid-cols-1 text-center items-center py-2 md:py-5 md:px-10 gap-1 md:gap-4">
+                        <div class="grid grid-cols-1 text-left items-center justify-start py-2 md:py-5 md:px-5 gap-1 md:gap-4">
                             <h3 class="font-bold text-xs md:text-[15px]">100K+</h3>
                             <p class="capitalize text-xs md:text-[15px]">files</p>
                         </div>
                     </div>
+
+                    <button class="rounded-full md:text-xl text-xs bg-blue-600 md:w-[15rem] text-white px-5 py-3 md:px-0 md:py-2 hover:bg-blue-900 outline-none mt-2 mx-auto">Explore Resources</button>
                 </div>
                 
                 <div class="grid items-center justify-center md:w-[60%] order-1 md:order-2 p-5 gap-4 mt-3">
                     <div class="flex items-center mx-auto relative mt-8">
-                        <div class="bg-blue-100 h-[30rem] w-[20rem] rounded-3xl"></div>
-                        <img src="../images/Frame 1000002911.png" alt="Excited student" class="object-contain h-[30rem] w-[20rem] absolute -mt-12 left-6">
+                        <div class="bg-blue-100 h-[14.5rem] w-[10rem] md:h-[30rem] md:w-[20rem] rounded-3xl"></div>
+                        <img src="../images/Frame 1000002911.png" alt="Excited student" class="object-contain h-[15rem] w-[15rem] md:h-[30rem] md:w-[20rem] absolute -top-5 md:-top-6 left-3 md:left-6">
                     </div>
                 </div>
             </div>
-            
+
+        </div>
+
+    </section>
+
+
+    
+            <!-- COURSES -->
+    <section class="flex flex-col w-full items-center justify-center">
+        <div class="grid grid-cols-1 items-center justify-between max-w-[1240px] mx-auto p-5">
+
+            <div class="flex flex-col md:w-full mx-auto md:mr-auto text-left items-start justify-between">
+                <h3 class="font-semibold text-xl md:text-2xl mx-auto text-left md:mx-0">What Course are you looking to learn?</h3>
+                <p class="text-gray-600 text-sm mx-auto text-left md:mx-0">Select a category of your choice and pick course(s) to learn from</p>
+            </div>
+
+            <div class="flex flex-row sm:shrink items-center justify-center p-5 w-full">
+                <div class="scrollbar-container flex overflow-x-auto gap-9 p-5">
+                    <button class="tab_btn rounded-full md:text-sm text-xs bg-gray-300 text-black px-5 py-3 md:py-2 outline-none" data-tab="business">Business</button>
+                    <button class="tab_btn active rounded-full md:text-sm text-xs bg-gray-300 shrink-0 text-black px-5 py-3 md:py-2 outline-none" data-tab="IT">Information Technology</button>
+                    <button class="tab_btn rounded-full md:text-sm text-xs bg-gray-300 text-black shrink-0 px-5 py-3 md:py-2 outline-none mx-auto" data-tab="arts">Arts & Humanities</button>
+                    <button class="tab_btn rounded-full md:text-sm text-xs bg-gray-300 text-black px-5 py-3 md:py-2 outline-none mx-auto" data-tab="language">Language</button>
+                    <button class="tab_btn rounded-full md:text-sm text-xs bg-gray-300 text-black px-5 py-3 md:py-2 outline-none mx-auto" data-tab="getenetics">Getenetics</button>
+                    <button class="tab_btn rounded-full md:text-sm text-xs bg-gray-300 text-black px-5 py-3 md:py-2 outline-none mx-auto" data-tab="health">Health</button>
+                </div>
+                
+            </div>
+
+            <div class="content_box w-full h-auto relative">
+ 
+                <div class="content hidden w-full" data-tab="business">
+                    <div class="mySlider w-[90%] items-center justify-center mx-auto object-contain overflow-x-hidden">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/card.png" class="object-cover w-full h-full rounded-md" alt="Design card">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Graphic Design</h3>
+                                <p class="info text-sm my-2 mx-4">Get an indept understanding of Graphics Design...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/write.png" class="object-cover w-full h-full rounded-md" alt="ui/ux">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Ui/Ux Design</h3>
+                                <p class="info text-sm my-2 mx-4">Get an inept understanding of Ui/Ux design by...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/man.png" class="object-cover w-full h-full rounded-md" alt="animation">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Animation</h3>
+                                <p class="info text-sm my-2 mx-4">Get an indept understanding of Graphics Design...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/card.png" class="object-cover w-full h-full rounded-md" alt="Design card">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Graphic Design</h3>
+                                <p class="info text-sm my-2 mx-4">Get an indept understanding of Graphics Design...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-pagination mt-10"></div> -->
+                    </div>
+                </div>
+ 
+                <div class="content active hidden w-full relative" data-tab="IT">
+                    <div class="mySlider w-[90%] items-center justify-center mx-auto object-contain overflow-x-hidden">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/card.png" class="object-cover w-full h-full rounded-md" alt="Design card">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Graphic Design</h3>
+                                <p class="info text-sm my-2 mx-4">Get an indept understanding of Graphics Design...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/write.png" class="object-cover w-full h-full rounded-md" alt="ui/ux">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Ui/Ux Design</h3>
+                                <p class="info text-sm my-2 mx-4">Get an inept understanding of Ui/Ux design by...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/man.png" class="object-cover w-full h-full rounded-md" alt="animation">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Animation</h3>
+                                <p class="info text-sm my-2 mx-4">Get an indept understanding of Graphics Design...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/card.png" class="object-cover w-full h-full rounded-md" alt="Design card">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Graphic Design</h3>
+                                <p class="info text-sm my-2 mx-4">Get an indept understanding of Graphics Design...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div>
+                </div>
+ 
+                <div class="content hidden w-full" data-tab="arts">
+                    <div class="mySlider w-[90%] sm:grid-cols-1 items-center justify-center mx-auto object-contain overflow-x-hidden">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/card.png" class="object-cover w-full h-full rounded-md" alt="Design card">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Graphic Design</h3>
+                                <p class="info text-sm my-2 mx-4">Get an indept understanding of Graphics Design...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/write.png" class="object-cover w-full h-full rounded-md" alt="ui/ux">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Ui/Ux Design</h3>
+                                <p class="info text-sm my-2 mx-4">Get an inept understanding of Ui/Ux design by...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/man.png" class="object-cover w-full h-full rounded-md" alt="animation">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Animation</h3>
+                                <p class="info text-sm my-2 mx-4">Get an indept understanding of Graphics Design...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/card.png" class="object-cover w-full h-full rounded-md" alt="Design card">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Graphic Design</h3>
+                                <p class="info text-sm my-2 mx-4">Get an indept understanding of Graphics Design...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="content hidden w-full relative" data-tab="language">
+                    <div class="mySlider w-[90%] sm:grid-cols-1 items-center justify-center mx-auto object-contain overflow-x-hidden">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/card.png" class="object-cover w-full h-full rounded-md" alt="Design card">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Graphic Design</h3>
+                                <p class="info text-sm my-2 mx-4">Get an indept understanding of Graphics Design...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/write.png" class="object-cover w-full h-full rounded-md" alt="ui/ux">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Ui/Ux Design</h3>
+                                <p class="info text-sm my-2 mx-4">Get an inept understanding of Ui/Ux design by...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/man.png" class="object-cover w-full h-full rounded-md" alt="animation">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Animation</h3>
+                                <p class="info text-sm my-2 mx-4">Get an indept understanding of Graphics Design...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/card.png" class="object-cover w-full h-full rounded-md" alt="Design card">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Graphic Design</h3>
+                                <p class="info text-sm my-2 mx-4">Get an indept understanding of Graphics Design...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="content hidden w-full relative" data-tab="getenetics">
+                    <div class="mySlider w-[90%] items-center justify-center mx-auto object-contain overflow-x-hidden">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/card.png" class="object-cover w-full h-full rounded-md" alt="Design card">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Graphic Design</h3>
+                                <p class="info text-sm my-2 mx-4">Get an indept understanding of Graphics Design...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/write.png" class="object-cover w-full h-full rounded-md" alt="ui/ux">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Ui/Ux Design</h3>
+                                <p class="info text-sm my-2 mx-4">Get an inept understanding of Ui/Ux design by...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/man.png" class="object-cover w-full h-full rounded-md" alt="animation">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Animation</h3>
+                                <p class="info text-sm my-2 mx-4">Get an indept understanding of Graphics Design...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/card.png" class="object-cover w-full h-full rounded-md" alt="Design card">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Graphic Design</h3>
+                                <p class="info text-sm my-2 mx-4">Get an indept understanding of Graphics Design...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="content hidden w-full relative" data-tab="health">
+                    <div class="mySlider w-[90%] items-center justify-center mx-auto object-contain overflow-x-hidden">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/card.png" class="object-cover w-full h-full rounded-md" alt="Design card">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Graphic Design</h3>
+                                <p class="info text-sm my-2 mx-4">Get an indept understanding of Graphics Design...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/write.png" class="object-cover w-full h-full rounded-md" alt="ui/ux">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Ui/Ux Design</h3>
+                                <p class="info text-sm my-2 mx-4">Get an inept understanding of Ui/Ux design by...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/man.png" class="object-cover w-full h-full rounded-md" alt="animation">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Animation</h3>
+                                <p class="info text-sm my-2 mx-4">Get an indept understanding of Graphics Design...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                            <div class="swiper-slide item cursor-pointer flex-col text-center items-center justify-center rounded-md border border-gray-250 shadow-md p-2">
+                                <img src="../images/card.png" class="object-cover w-full h-full rounded-md" alt="Design card">
+                                <h3 class="title font-semibold space-x-2 text-lg my-3">Graphic Design</h3>
+                                <p class="info text-sm my-2 mx-4">Get an indept understanding of Graphics Design...</p>
+                                <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 mx-auto rounded-full">register</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next sm:hidden"></div>
+                <div class="swiper-button-prev sm:hidden"></div>
+            </div>
+
         </div>
     </section>
 
 
-            
 
+
+    <section class="flex flex-col w-full items-center justify-center">
+        <div class="grid grid-cols-1 items-center justify-between max-w-[1240px] mx-auto p-5">
+
+            <div class="flex flex-col md:w-full mx-auto md:mr-auto text-left items-start justify-between">
+                <h3 class="font-semibold text-xl md:text-2xl mx-auto text-left md:mx-0">Get yourself prepared</h3>
+                <p class="text-gray-600 text-sm mx-auto text-left md:mx-0">Get yourself ready for any international exams today with our practice test</p>
+            </div>
+
+            <div class="grid md:grid-cols-4 items-center justify-between w-full mx-auto p-5 gap-4 mt-3">
+                 <div class="cursor-pointer flex-col text-left items-start justify-between rounded-md border border-gray-250 shadow-md p-1">
+                    <div class="h-[200px] w-full">
+                         <img src="../images/Frame 113.png" class="object-cover w-full h-full rounded-md" alt="toefl">
+                    </div>
+                    <h3 class="title font-semibold space-x-2 text-lg my-3 mx-3">TOEFL (Test Of English as a Foreign Language)</h3>
+                    <p class="info text-sm my-2.5 mx-3">Test your proficiency in English with our well prepared and analyzed test. This test was collated by our topTutors.  The exam has the same parameters used by the... </p>
+                    <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 rounded-full mx-3">Start Trial</button>
+                </div>
+                <div class="cursor-pointer flex-col text-left items-start justify-between rounded-md border border-gray-250 shadow-md p-1">
+                    <div class="h-[200px] w-full">
+                        <img src="../images/Frame 117.png" class="object-cover w-full h-full rounded-md" alt="gmat">
+                    </div>
+                    <h3 class="title font-semibold space-x-2 text-lg my-3 mx-3">GMAT (Graduate Mgt. Admission Test)</h3>
+                    <p class="info text-sm my-2.5 mx-3">Test your proficiency in English with our well prepared and analyzed test. This test was collated by our topTutors.  The exam has the same parameters used by the... </p>
+                    <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 rounded-full mx-3">Start Trial</button>
+                </div>
+                <div class="cursor-pointer flex-col text-left items-start justify-betweem rounded-md border border-gray-250 shadow-md p-1">
+                    <div class="h-[200px] w-full">
+                        <img src="../images/Frame 1483.png" class="object-cover w-full h-full rounded-md" alt="ielts">
+                    </div>
+                    <h3 class="title font-semibold space-x-2 text-lg my-3 mx-3">IELTS (International English Language Testing System</h3>
+                    <p class="info text-sm my-2.5 mx-3">Test your proficiency in English with our well prepared and analyzed test. This test was collated by our topTutors.  The exam has the same parameters used by the... </p>
+                    <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 rounded-full mx-3">Start Trial</button>
+                </div>
+                <div class="cursor-pointer flex-col text-left items-start justify-between rounded-md border border-gray-250 shadow-md p-1">
+                    <div class="h-[200px] w-full">
+                        <img src="../images/Frame 114.png" class="object-cover w-full h-full rounded-md" alt="sat">
+                    </div>
+                    <h3 class="title font-semibold space-x-2 text-lg my-3 mx-3">SAT ( Scholarship Aptitude Test)</h3>
+                    <p class="info text-sm my-2.5 mx-3">Test your proficiency in English with our well prepared and analyzed test. This test was collated by our topTutors.  The exam has the same parameters used by the... </p>
+                    <button class="bg-sky-200 text-blue-500 font-semibold capitalize reg px-3 py-1 text-sm md:text-xs mt-2 mb-6 rounded-full mx-3">Start Trial</button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
         
-    
 
+
+
+    <section class="flex flex-col w-full items-center justify-center">
+        <div class="grid grid-cols-1 items-center justify-between w-full">
+            <div class="h-96 md:h-80 w-full items-center relative">
+                <img src="../images/pexels-katerina-holmes-5905443.jpg" class="object-cover opacity-100 w-full h-full" alt="">
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full md:w-[40%] flex flex-col items-center text-center justify-center bg-transparent text-white px-4 py-6">
+                    <h3 class="text-2xl md:text-3xl font-bold mx-auto">Don't Stay Limited</h3>
+                    <p class="mt-2 mx-auto text-sm md:text-lg flex flex-wrap">The world as we know it today is changing everyday. Don’t stay limited to a certain field of study. Explore, Equip and improve yourself. Start that course and begin your journey to being a professional in your chosen career part today.</p>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-full mx-auto">Browse Courses</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- OUR TUTORS -->
+    <section class="flex flex-col w-full items-center justify-center">
+        <div class="grid grid-cols-1 items-center justify-between w-full">
+             <div class="flex flex-col md:w-full mx-auto md:mr-auto text-center items-center justify-between">
+                <h3 class="font-semibold text-xl md:text-2xl mx-auto text-left md:mx-0 capitalize">some of our expert instructors</h3>
+                <p class="text-gray-600 text-sm mx-auto text-left md:mx-0">Meet some of our qualified and lovely instuctors</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- SWIPER NAVIGATION JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <!-- MAIN JS -->
     <script src="../js/landing.js"></script>
 </body>
 </html>

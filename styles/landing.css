@@ -14,3 +14,82 @@
       border-color: rgba(0, 0, 0, 0.5);
     }
   }
+
+
+  .tab_btn.active {
+    background-color: seagreen;
+    color: white;
+  }
+
+  .scrollbar-container {
+  scrollbar-width: thin;
+  scrollbar-color: gray lightgray;
+  overflow-y: hidden;
+  }
+
+.scrollbar-container::-webkit-scrollbar {
+  width: 2px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.scrollbar-container::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+
+.scrollbar-container::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 50px;
+}
+
+@media (min-width: 768px) {
+  .scrollbar-container {
+    overflow-x: visible;
+    scrollbar-width: 2px;
+    scrollbar-color: initial;
+  }
+}
+
+
+
+.content_box .content.active {
+      display: block;
+      transition: ease-in-out;
+}
+
+
+
+
+.content_box .swiper-button-next,
+.content_box .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  opacity: .7;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #000;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.content_box .swiper-button-next::after,
+.content_box .swiper-button-prev::after {
+  content: "";
+}
+
+.content_box .swiper-button-next::after {
+  font-family: "Material Icons";
+  content: "chevron_right";
+}
+
+.content_box .swiper-button-prev::after {
+  font-family: "Material Icons";
+  content: "chevron_left";
+}
