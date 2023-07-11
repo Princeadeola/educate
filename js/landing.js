@@ -189,3 +189,79 @@ new Swiper('.mySlider', {
         }
     },
 });
+
+
+
+
+
+
+new Swiper('.thisSlider', {
+    slidesPerView: 3,
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    spaceBetween: 30,
+
+    loop: false,
+
+    breakpoints: {
+        // when window width is >= 200px (for mobile screens)
+        200: {
+            slidesPerView: 1.5,
+            spaceBetween: 20
+        },
+        // when window width is >= 340px (for mobile screens)
+        300: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        // when window width is >= 200px (for mobile screens)
+        350: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        // when window width is >= 200px (for mobile screens)
+        450: {
+            slidesPerView: 2.25,
+            spaceBetween: 20
+        },
+        // when window width is >= 576px (for mobile screens)
+        570: {
+            slidesPerView: 2.5,
+            spaceBetween: 30
+        },
+        // when window width is >= 200px (for mobile screens)
+        700: {
+            slidesPerView: 3,
+            spaceBetween: 20
+        },
+        // when window width is >= 992px (for large screens)
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        1023: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        }
+    },
+});
+
+
+
+new Swiper('.Students', {
+    slidesPerView: 1,
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    spaceBetween: 30,
+
+    loop: false,
+
+});

@@ -61,35 +61,74 @@
 
 
 .content_box .swiper-button-next,
-.content_box .swiper-button-prev {
+.content_box .swiper-button-prev,
+.tutor .swiper-button-next,
+.tutor .swiper-button-prev,
+.Students .swiper-button-next,
+.Students .swiper-button-prev {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
-  opacity: .7;
-  width: 30px;
-  height: 30px;
+  opacity: .9;
+  width: 20px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 15px;
   color: #000;
   padding: 1rem;
   background-color: #fff;
   border-radius: 50%;
 }
 
+.Students .swiper-button-next,
+.Students .swiper-button-prev {
+  top: 75%;
+}
+
 .content_box .swiper-button-next::after,
-.content_box .swiper-button-prev::after {
+.content_box .swiper-button-prev::after,
+.tutor .swiper-button-next::after,
+.tutor .swiper-button-prev::after,
+.Students .swiper-button-next::after,
+.Students .swiper-button-prev::after  {
   content: "";
 }
 
-.content_box .swiper-button-next::after {
+.content_box .swiper-button-next::after,
+.tutor .swiper-button-next::after,
+.Students .swiper-button-next::after {
   font-family: "Material Icons";
   content: "chevron_right";
 }
 
-.content_box .swiper-button-prev::after {
+.content_box .swiper-button-prev::after,
+.tutor .swiper-button-prev::after,
+.Students .swiper-button-prev::after {
   font-family: "Material Icons";
   content: "chevron_left";
+}
+
+
+
+
+.styled-hr {
+  height: 2px;
+  background-color: #333;
+  border: none;
+  position: relative;
+}
+
+.styled-hr::before {
+  content: "Divider";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 2px 8px;
+  font-size: 12px;
+  color: #333;
 }
